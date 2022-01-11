@@ -1,0 +1,25 @@
+ * {	
+	font-family: 'Lobster', cursive;
+}
+
+.section {
+	height: 500px;
+	width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	border: 3px solid black;
+}
+
+.snake {
+	height: 10px;
+	width: 10px;
+	background-color:black;
+	border: 1px solid white;
+	box-sizing: border-box;
+}
+
+.empty {
+	height: 10px;
+	width: 10px;
+	background-color: greenyellow;
+}
