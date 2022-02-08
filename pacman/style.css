@@ -1,0 +1,68 @@
+ * {	
+	font-family: 'Lobster', cursive;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 420px;
+	height: 540px;
+	border: solid 2px black;
+}
+
+.grid div{
+	width: 20px;
+	height: 20px;
+}
+
+.pac-dot{
+	background-color: #0F0;
+	border: 5px solid #FFF;
+	box-sizing: border-box;
+}
+
+.wall {
+	background-color: #00F;
+}
+
+.ghost-lair{
+	background-color: #8cf;
+}
+
+.power-pellet {
+	background-color: #090;
+	border-radius: 10px;
+}
+
+.blinky{
+	background-color: red;
+	border: 0px;
+}
+
+.pinky{
+	background-color: pink;
+	border: 0px;
+}
+
+.inky{
+	background-color: cyan;
+	border: 0px;
+}
+
+.clyde{
+	background-color: orange;
+	border: 0px;
+}
+
+.scared-ghost{
+	background-color: aquamarine;
+	border: 0px;
+}
+
+.pac-man {
+	background-color: #FFFF00;
+	border-radius: 10px;
+}
+.start{
+	margin-bottom: 10px;
+}
