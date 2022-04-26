@@ -1,4 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url(../images/background.jpg);
+    background-size: cover;
+    position: relative;
+	z-index: 1;
+}
+
+body::after {
+	content: '';
+	position: fixed;
+	background-color: black;
+	opacity: 0.4;	
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+}
+
+/*Projects*/
+
+.projects{
+	width: 80%;
+	height: 92vh;
+    margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.projectName {
+    font-style: bold;
+    color: white;
+    background-color:steelblue;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background 0.5s;
+
+}
+
+.projectName:hover {
+    background-color: rebeccapurple;
+}
+
+.projects img{
+	width: 250px;
+	height: 250px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+#snake,#blocks {
+	object-fit: contain;
+	background-color: #24252A;
+}
+
+.game {
+    margin-left: 10px;
+    margin-top: 10px;
+	width: 250px;
+	height: 300px;
+	display: block;
+	text-align: center;
+}
 
 /* Navigation */
 
@@ -16,7 +94,7 @@ nav {
     align-items: center;
     padding: 0px 10%;
     background-color: #24252A; 
-    height: 8vh;
+    min-height: 8vh;
 }
 
 .logo{

@@ -17,12 +17,12 @@ body {
 
 body::after {
 	content: '';
-	position: absolute;
+	position: fixed;
 	background-color: black;
 	opacity: 0.4;	
-	left: 0px;
-	top: 8vh;
-	height: 92vh;
+	left: 0;
+	top: 0;
+	height: 100vh;
 	width: 100%;
 	z-index: -1;
 }
@@ -30,9 +30,9 @@ body::after {
 .container {
     width: 500px;
     background: rgba(0,0,0,0.5);
-    padding: 50px;
+    padding: 25px;
     text-align: center;
-    margin: 2% auto;
+    margin: 1% auto;
     color:white;
 }
 
@@ -70,6 +70,10 @@ body::after {
     text-decoration: none;
 }
 
+#text li{
+    list-style: none;
+}
+
 /* Navigation */
 
 li,a,button {
@@ -86,7 +90,7 @@ nav {
     align-items: center;
     padding: 0px 10%;
     background-color: #24252A; 
-    height: 8vh;
+    min-height: 8vh;
 }
 
 .logo{
@@ -127,6 +131,10 @@ nav {
 }
 
 @media screen and (max-width: 550px)  {
+    .container {
+        margin: 0;
+    }
+
     body {
         overflow-x: hidden;
     }

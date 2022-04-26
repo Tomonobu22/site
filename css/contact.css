@@ -9,7 +9,7 @@
 
 /* FORM */
 .contact{
-    height: 8vh;
+    min-height: 8vh;
     padding: 15px 0;
     text-align: center;
     background-image: url(../background.jpg); 

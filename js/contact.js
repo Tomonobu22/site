@@ -6,7 +6,7 @@ const errors = document.querySelectorAll('.error');
 
 function validateForm(){
     let errorFlag = false;
-    errorFlag = validateName() && emailIsValid();
+    errorFlag = validateName() || emailIsValid();
 
     return !errorFlag;
 }
@@ -22,6 +22,7 @@ function validateName(){
     }
     else{
         errors[0].innerHTML = "";
+        error = false;
     }
 
     return error;
@@ -35,10 +36,11 @@ function emailIsValid(){
         errors[1].style.backgroundColor = "rgb(238, 166, 166)";
         email.focus();
         email.select();
-        errorFlag = true;
+        error = true;
     }
     else{
         errors[1].innerHTML = "";
+        error = false;
     }
     return error;
 }
