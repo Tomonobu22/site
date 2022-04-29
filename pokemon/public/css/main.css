@@ -53,6 +53,9 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .square {

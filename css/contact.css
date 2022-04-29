@@ -4,39 +4,33 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
-    font-family: 'Montserrat', sans-serif;
+}
+.center {
+    text-align: center;
 }
 
 /* FORM */
 .contact{
+    font-family: 'Montserrat', sans-serif;
     min-height: 8vh;
     padding: 15px 0;
     text-align: center;
-    background-image: url(../background.jpg); 
+    background: url(../images/background.jpg); 
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    min-height: 84vh;
-    background-color: #24252A; 
-}
-
-form{
-	width: 80vw;
-	text-align: center;
+.formContent {
+    width: 80vw;
 	padding: 30px;
     color: white;
     background-color: #333;
 }
 
-.input{
-    border: none;
-	padding: 7px;
-	margin: 6px 0;
-	background-color: transparent;
-	color: #FFF;
+form{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    width: 350px;
 }
+
 
 .input_section{
     min-width: 300px;
@@ -47,39 +41,36 @@ form{
     color: white;
 }
 
-.input textarea{
-    min-height: 150px;
-    resize: none;
+.button
+{
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	background-color: #6885b1;
+    border-color: #6885b1;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	transition: 0.5s;
 }
 
-.submit input:hover{
-	background-color: transparent;
-    color: white;
-}
-
-.input_section:focus {
-    background: linear-gradient(to bottom, transparent, #222);
-	outline: none;
-	border-bottom: 3px solid steelblue;
+.button:hover{
+	color: #fff;
+	opacity: 0.9;
 }
 
 /* Navigation */
-
-li,a,button {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10%;
-    background-color: #24252A; 
-    min-height: 8vh;
+.bckTop {
+	background-color:#6885b1;
 }
 
 .logo{
@@ -87,77 +78,3 @@ nav {
     width: 40px;
 }
 
-.nav__links{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-    color: rgb(255, 255, 255, 0.7);  /*0088a9*/
-}
-
-.responsive {
-    display: none;
-    cursor: pointer;
-}
-.responsive div{
-    margin: 3px 0px;
-    width: 20px;
-    height: 3px;
-    background-color: white;
-}
-
-@media screen and (max-width: 625px)  {
-    li,a,button {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 550px)  {
-    body {
-        overflow-x: hidden;
-    }
-    
-    .nav__links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #24252A;
-        flex-direction: column; 
-        align-items: center; 
-        width: 40%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-		z-index: 100;
-    }
-
-    .nav__links li {
-        opacity: 0;
-    }
-
-    .responsive {
-        display: block;
-    }
-}
-
-.nav-active{
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    0%{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}

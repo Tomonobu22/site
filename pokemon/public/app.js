@@ -19,16 +19,16 @@ let poke = {
     api: 'https://pokeapi.co/api/v2/pokemon/',
     keyName: Math.round(Math.random()*899),
     //initialize and ask for the info
-    info: async function(){
-        await fetch(this.api+this.keyName)
+    info: function(){
+         fetch(this.api+this.keyName)
         .then(res => res.json())
         .then(data => this.image(data))
     },
     //obtain the image and ask for the others functions
     image: function(data){
+        if(data.sprites.back_default == null) nextPokemon();
         pokemon.src = data.sprites.back_default;
         _name = data.name;
-        console.log(_name);
         this.random();
         this.guess(reveal);
     },
@@ -122,7 +122,6 @@ skip.addEventListener('click',()=>{
         _score-=5;
         score.textContent = "Score: "+_score; 
     }
-        
     nextPokemon();
 })
 
@@ -132,7 +131,7 @@ const nextPokemon = function(){
     _buttons.forEach(element=>{
         element.classList.remove('hidden');
     });   
-    poke.info();     
+    poke.info(); 
 }
 
 restart.addEventListener('click',()=>{

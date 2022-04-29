@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 	//3 - power
 	//4 - empty
 
-//draw grid
+//draw grid in DIV GRID
 
 	function createBoard(){
 		for (let i =0; i <= layout.length; i++){

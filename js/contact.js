@@ -14,7 +14,7 @@ function validateForm(){
 function validateName(){
     let error = false;
     if(userName.value.length < 2){
-        errors[0].innerHTML = "Invalid name";
+        errors[0].innerHTML = "Invalid name (Too short)";
         errors[0].style.backgroundColor = "rgb(238, 166, 166)";
         userName.focus();
         userName.select();
