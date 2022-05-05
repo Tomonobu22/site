@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded',() =>{
     const section = document.querySelector('.section');
     const fragment = document.createDocumentFragment();
     const score = document.querySelector('.score');
+    const gameOver = document.getElementById("gameOver");
 
     let grid =[];
     let snakePosition = 1415;
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded',() =>{
     let timerLeft
     let dotPosition = 1415;
     let points = 0;
+    let speed = 100;
 
     score.textContent = `Score ${points}`;
 
@@ -43,25 +45,25 @@ document.addEventListener('DOMContentLoaded',() =>{
             case 37:
                 if(direction != 'right'){
                     clearIntervals();
-                    timerLeft = setInterval(moveLeft,100);
+                    timerLeft = setInterval(moveLeft,speed);
                 }
                 break;
             case 38:
                 if(direction != 'down'){
                     clearIntervals();
-                    timerUp = setInterval(moveUp,100);
+                    timerUp = setInterval(moveUp,speed);
                 } 
                 break;
             case 39:
                 if(direction != 'left'){
                     clearIntervals();
-                    timerRight = setInterval(moveRight,100);
+                    timerRight = setInterval(moveRight,speed);
                 }
                 break;
             case 40:
                 if(direction != 'up'){
                     clearIntervals();
-                    timerDown = setInterval(moveDown,100);
+                    timerDown = setInterval(moveDown,speed);
                 }              
                 break;
         }
@@ -139,8 +141,9 @@ document.addEventListener('DOMContentLoaded',() =>{
 
     function youLose(){
         clearIntervals();
-        alert('YOU LOSE');
-        location.reload();
+        gameOver.style.display = "block";
+        gameOver.addEventListener("click",()=>{location.reload(); })
+        document.removeEventListener('keydown',moveSnake);
     }
 
     document.addEventListener('keydown',moveSnake);

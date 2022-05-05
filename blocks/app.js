@@ -1,5 +1,6 @@
 const grid = document.querySelector(".grid");
 const scoreDisplay = document.getElementById("score");
+const gameOver = document.getElementById("gameOver");
 const fragment = document.createDocumentFragment();
 const boardWidth = 560;
 const boardHeight = 300;
@@ -115,7 +116,7 @@ function moveBall() {
 	checkForCollisions();
 }
 
-timerId = setInterval(moveBall,30);
+timerId = setInterval(moveBall,15);
 
 //check for collisions
 function checkForCollisions() {
@@ -166,6 +167,8 @@ function checkForCollisions() {
 	if(currentPositionBall[1] <= 0){
 		clearInterval(timerId);
 		scoreDisplay.innerHTML= 'You lose';
+		gameOver.style.display = "block";
+		gameOver.addEventListener("click",()=>{location.reload(); })
 		document.removeEventListener('keydown',moveUser);
 	}
 }

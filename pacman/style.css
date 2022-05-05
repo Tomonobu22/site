@@ -1,9 +1,19 @@
- * {	
-	font-family: 'Lobster', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {	
+	font-family: 'Play', sans-serif;
 }
 
 body {
     background: url(../images/background.jpg);
+}
+
+#errorScreen{
+	display: none;
+}
+
+#game{
+	width: 90vw;
 }
 
 .grid {
@@ -11,7 +21,6 @@ body {
 	flex-wrap: wrap;
 	width: 420px;
 	height: 540px;
-	border: solid 2px black;
 }
 
 .grid div{
@@ -20,13 +29,13 @@ body {
 }
 
 .pac-dot{
-	background-color: #0F0;
+	background-color: #68b1a5;
 	border: 5px solid #FFF;
 	box-sizing: border-box;
 }
 
 .wall {
-	background-color: #00F;
+	background-color: #6885b1;
 }
 
 .ghost-lair{
@@ -34,27 +43,35 @@ body {
 }
 
 .power-pellet {
-	background-color: #090;
+	background-color: #79b168;
 	border-radius: 10px;
 }
 
 .blinky{
-	background-color: red;
+	background: url(./red.png);
+	background-size: cover;
+	background-position: center center;
 	border: 0px;
 }
 
 .pinky{
-	background-color: pink;
+	background: url(./pink.png);
+	background-size: cover;
+	background-position: center center;
 	border: 0px;
 }
 
 .inky{
-	background-color: cyan;
+	background: url(./blue.png);
+	background-size: cover;
+	background-position: center center;
 	border: 0px;
 }
 
 .clyde{
-	background-color: orange;
+	background: url(./orange.png);
+	background-size: cover;
+	background-position: center center;
 	border: 0px;
 }
 
@@ -65,8 +82,36 @@ body {
 
 .pac-man {
 	background-color: #FFFF00;
+	box-sizing: border-box;
 	border-radius: 10px;
 }
 .start{
 	margin-bottom: 10px;
 }
+
+.backLair {
+	background-color: #8cf;
+}
+
+.pac-man-right{
+	box-shadow: yellowgreen 2px 0;
+}
+.pac-man-left{
+	box-shadow: yellowgreen -2px 0;
+}
+.pac-man-up{
+	box-shadow: yellowgreen 0 -2px;
+}
+.pac-man-down{
+	box-shadow: yellowgreen 0 2px;
+}
+
+@media only screen and (max-width: 580px) {
+	#game {
+		visibility: hidden;
+	}
+	#errorScreen{
+		width: 50vw;
+		display: inline-block;
+	}
+  }

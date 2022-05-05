@@ -13,14 +13,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-color: lightcoral;
+  background-color: #6885b1;
 }
 
 .center {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 300px;
-  border: 2px solid rgba(255, 0, 0, 0.281);
+  border: 2px solid rgba(0, 102, 255, 0.281);
   background-color: beige;
   padding: 20px;
 }

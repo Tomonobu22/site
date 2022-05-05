@@ -26,8 +26,8 @@ let poke = {
     },
     //obtain the image and ask for the others functions
     image: function(data){
-        if(data.sprites.back_default == null) nextPokemon();
-        pokemon.src = data.sprites.back_default;
+        if(data.sprites.front_default == null) nextPokemon();
+        pokemon.src = data.sprites.front_default;
         _name = data.name;
         this.random();
         this.guess(reveal);
