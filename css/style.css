@@ -7,6 +7,10 @@
     padding: 0; 
 }
 
+body{
+	padding: 0 10%;
+}
+
 .button
 {
 	display: inline-block;
@@ -151,7 +155,7 @@
     background: rgba(0,0,0,0.1);
     padding: 25px;
     text-align: center;
-    margin: 2% auto;
+    margin: 0 auto;
     color:black;
 }
 
@@ -184,6 +188,10 @@
 	object-fit: contain;
 }
 
+#projects {
+	margin-bottom: 0;
+}
+
 /* FORM */
 .headerText{
     min-height: 8vh;
@@ -193,17 +201,18 @@
 }
 
 .formContent {
-    width: 80vw;
+	width: 80vw;
 	padding: 30px;
     color: white;
     background-color: #333;
 }
 
 form{
-    margin: auto;
+	margin: auto;
     width: 350px;
 }
 
 #contactMe{
+	background: rgba(0,0,0,0.1);
 	min-height: 100vh;
 }
