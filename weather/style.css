@@ -1,3 +1,13 @@
+.navbar-brand{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	text-decoration: none;
+	color: white;
+	background-color: grey;
+	padding: 4px 4px 0 4px;
+	border-radius: 5px;
+}
 
 body {
 	display: flex;

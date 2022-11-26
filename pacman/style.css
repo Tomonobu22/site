@@ -4,16 +4,23 @@
 	font-family: 'Play', sans-serif;
 }
 
-body {
-    background: url(../images/background.jpg);
+/* Navigation */
+
+.bckTop {
+	display: fixed;
+	background-color:#6885b1;
+}
+
+/* Content */
+
+.content{
+	padding-top: 10px;
+	max-width: 500px;
+	margin: auto;
 }
 
 #errorScreen{
 	display: none;
-}
-
-#game{
-	width: 90vw;
 }
 
 .grid {

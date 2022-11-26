@@ -7,12 +7,22 @@
     padding: 0; 
 }
 
-body{
-	background-image: url(../images/background.jpg);
+/* Navigation */
+
+.bckTop {
+	display: fixed;
+	background-color:#6885b1;
+}
+
+/* Content */
+
+.content{
+	max-width: 600px;
+	margin: auto;
 }
 
 .top {
-	margin:20px;
+	margin: 20px;
 }
 
 .grid {
@@ -34,7 +44,7 @@ body{
 	position: absolute;
 	width: 100px;
 	height: 20px;
-	background-color: #a868b1;
+	background-color: grey;
 }
 
 .ball {
@@ -42,18 +52,18 @@ body{
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background-color: #b16868;
+	background-color: grey;
 }
 
 #gameOver{
 	display: none;
-	position: absolute;
+	position: relative;
 	z-index: 1;
-	top: 225px;
+	top: 125px;
 	left: 200px;
 	width: 200px;
 	border: 2px solid grey;
-	background-color: rgb(233, 143, 143);
+	background-color: rgb(243, 182, 182);
 	text-align: center;
 	padding: 20px 0px;
 }
