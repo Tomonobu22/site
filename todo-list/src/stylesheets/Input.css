@@ -1,0 +1,25 @@
+.task-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-input {
+  width: 350px;
+  display: flex;
+  background-color: white;
+  padding: 15px 25px;
+  border: 2px solid #1b1b32;
+  border-radius: 7px 0 0 7px;
+  font-size: 20px;
+  outline: none;
+}
+
+.add-button {
+  background-color: #1b1b32;
+  font-size: 18px;
+  padding: 16px;
+  color: white;
+  border-radius: 0 7px 7px 0;
+  cursor: pointer;
+}

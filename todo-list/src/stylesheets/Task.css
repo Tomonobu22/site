@@ -1,0 +1,30 @@
+.task-container {
+  width: 500px;
+  min-height: 50px;
+  display: flex;
+  background-color: #1b1b32;
+  margin: 5px;
+  padding: 5px 20px;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 7px;
+  cursor: pointer;
+
+}
+
+.task-text {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.done-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.completed {
+  background-color: rgb(14, 78, 78);
+  text-decoration: line-through;
+}
