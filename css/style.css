@@ -216,3 +216,9 @@ form{
 	background: rgba(0,0,0,0.1);
 	min-height: 100vh;
 }
+
+@media only screen and (max-width: 440px) {
+	.formText {
+	  width: 80vw;
+	}
+}
