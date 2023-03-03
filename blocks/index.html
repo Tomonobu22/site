@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Breakout Game</title>
+	<title>Bricks Breaking Game</title>
+	<link rel="icon" href="../images/icon.png">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/cdbba87284.js" crossorigin="anonymous"></script> 
 	<!-- Bootstrap -->
@@ -17,17 +18,20 @@
 			<a class="navbar-brand" href="../index.html">
 				<img src="../images/icon.png" alt="logo" width="auto" height="30" style="filter:brightness(2.5)" class="d-inline-block align-text-top">
 			</a>
-			<h5 class="title" style="color: rgb(236, 223, 223);">Breakout Game</h5>
+			<h5 class="title" style="color: rgb(236, 223, 223);">Bricks Breaking Game</h5>
         </div>
     </nav>
+	<div id="errorScreen">
+		<p>Your screen is not wide enough to play this game. We are sorry for the inconvenience. We invite you to try the other projects.</p>
+		<a href="../index.html">Home</a>
+	</div>
 	<div class="content">
-		<div class="top">
-			<h5>Score:</h5>
-			<p id="score">0</p> 
-		</div>
+		<div class="score" style="--width: 0; --score: '0%'"></div>
 		<div class="grid"></div>
+		<div id="start">
+			<button>Start</button>
+		</div>
 		<div id="gameOver">
-			<p>GAME OVER</p>
 			<button>Try Again</button>
 		</div>
 	</div>

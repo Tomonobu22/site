@@ -1,6 +1,7 @@
 const grid = document.querySelector(".grid");
-const scoreDisplay = document.getElementById("score");
+const scoreDisplay = document.querySelector(".score");
 const gameOver = document.getElementById("gameOver");
+const start = document.getElementById("start");
 const fragment = document.createDocumentFragment();
 const boardWidth = 560;
 const boardHeight = 300;
@@ -27,7 +28,6 @@ class Block{
 	}
 }
 
-
 const blocks = [
 	new Block(10,270),
 	new Block(120,270),
@@ -46,6 +46,7 @@ const blocks = [
 	new Block(450,210),	
 ];
 
+const numBlocks = blocks.length;
 
 function addBlocks() {
 	for (let i = 0; i < blocks.length; i++) {
@@ -85,14 +86,14 @@ function drawBall() {
 function moveUser(e) {
 	switch(e.key){
 		case 'ArrowLeft':
-			if (currentPosition[0] >= 10){
-				currentPosition[0] -= 10;
+			if (currentPosition[0] >= 20){
+				currentPosition[0] -= 20;
 				drawUser();				
 			}
 			break;
 		case 'ArrowRight':
-			if (currentPosition[0] <= boardWidth - blockWidth - 10){
-				currentPosition[0] += 10;
+			if (currentPosition[0] <= boardWidth - blockWidth - 20){
+				currentPosition[0] += 20;
 				drawUser();
 			}
 			break;
@@ -116,11 +117,16 @@ function moveBall() {
 	checkForCollisions();
 }
 
-timerId = setInterval(moveBall,15);
+start.addEventListener("click",()=>{
+	timerId = setInterval(moveBall,15);
+	start.style.display = "none";
+})
+
 
 //check for collisions
 function checkForCollisions() {
 	//check for block collisions
+	
 	for (let i=0; i<blocks.length; i++){
 		if (
 			currentPositionBall[0] > blocks[i].bottomLeft[0] && 
@@ -133,13 +139,20 @@ function checkForCollisions() {
 			blocks.splice(i,1);
 			changeDirection();
 			score++;
-			scoreDisplay.textContent = score;
+			let scorePct = Math.round(score*100/numBlocks);
+			scoreDisplay.style.setProperty('--width', scorePct); 
+			scoreDisplay.style.setProperty('--score', "'"+scorePct+"%'"); 
 
 			//check for win
 			if (blocks.length === 0){
-				scoreDisplay.textContent= "YOU WIN";
+				// scoreDisplay.textContent= "YOU WIN";
 				clearInterval(timerId);
 				document.removeEventListener('keydown',moveBall);
+				document.removeEventListener('keydown',moveUser);
+				gameOver.style.display = "block";
+				gameOver.addEventListener("click",()=>{
+					location.reload(); 
+				})
 			}
 
 		}
@@ -167,7 +180,9 @@ function checkForCollisions() {
 	if(currentPositionBall[1] <= 0){
 		clearInterval(timerId);
 		gameOver.style.display = "block";
-		gameOver.addEventListener("click",()=>{location.reload(); })
+		gameOver.addEventListener("click",()=>{
+			location.reload(); 
+		})
 		document.removeEventListener('keydown',moveUser);
 	}
 }
