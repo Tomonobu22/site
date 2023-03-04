@@ -102,10 +102,12 @@ document.addEventListener('DOMContentLoaded',()=>{
 			powerPelletEaten();
 			checkForWin();
 			squares[pacmanCurrentIndex].classList.add('pac-man');	
-			squares[pacmanCurrentIndex].classList.add(pacmanNextDirection);	
-
+			if (pacmanDirection != ''){
+				squares[pacmanCurrentIndex].classList.add(pacmanNextDirection);	
+			}
 		},350);
 	}
+	
 	movePacman();
 
 

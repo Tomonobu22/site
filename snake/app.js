@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded',() =>{
     const fragment = document.createDocumentFragment();
     const score = document.querySelector('.score');
     const gameOver = document.getElementById("gameOver");
+    const bgAnimation = document.querySelector('.bg-animation')
 
     let grid =[];
     let snakePosition = 1415;
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded',() =>{
     let timerLeft
     let dotPosition = 1415;
     let points = 0;
-    let speed = 100;
+    let speed = 50;
 
     score.textContent = `Score ${points}`;
 
@@ -39,7 +40,6 @@ document.addEventListener('DOMContentLoaded',() =>{
 
     createBoard();
     initializeSnake();
-
     function moveSnake(e){
         switch(e.keyCode){
             case 37:
@@ -71,20 +71,25 @@ document.addEventListener('DOMContentLoaded',() =>{
     
 
     function changePositions(){
+        // Add 1 pixel at the front of the snake
         grid[positions[positions.length-1]].classList.add('snake');
         grid[positions[positions.length-1]].classList.remove('empty');   
         
         if(positions[positions.length-1] != dotPosition){
+            // Remove 1 pixel at the back in case we do not catch a DOT
             grid[positions[0]].classList.add('empty'); 
             grid[positions[0]].classList.remove('snake'); 
-            positions.shift();   
+            positions.shift(); 
         } else {
             points++
+            bgAnimation.style.borderColor = "yellow"
+            setTimeout((()=>{bgAnimation.style.borderColor = "white"}), 500);
             createDots();
         };
 
         score.textContent = `Score ${points}`;
     }
+
 
     function moveLeft(){
         direction = 'left';
@@ -124,7 +129,7 @@ document.addEventListener('DOMContentLoaded',() =>{
 
     function createDots(){
         do {
-        dotPosition = Math.floor(Math.random()*2500)+1;
+            dotPosition = Math.floor(Math.random()*2500)+1;
         } while(positions.includes(dotPosition));
 
         grid[dotPosition].classList.add('snake');
@@ -141,6 +146,7 @@ document.addEventListener('DOMContentLoaded',() =>{
 
     function youLose(){
         clearIntervals();
+        document.querySelector('.gameOver-score').textContent = `Score: ${points}`;
         gameOver.style.display = "block";
         gameOver.addEventListener("click",()=>{location.reload(); })
         document.removeEventListener('keydown',moveSnake);

@@ -54,9 +54,14 @@ h5 {
 
 /* Content */
 
+.bg-animation{
+	min-width: 506px;
+	border: 2px solid white;
+}
+
 .content {
 	padding-top: 20px;
-	max-width: 500px;
+	max-width: 506px;
 	margin: auto;
 }
 
