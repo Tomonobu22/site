@@ -112,6 +112,8 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
 	function setDirection(e){
+		if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1)
+			e.preventDefault()
 		switch(e.keyCode){
 			case 37:			
 				pacmanNextDirection = "pac-man-left";	
