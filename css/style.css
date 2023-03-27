@@ -155,7 +155,7 @@ body{
     background: rgba(0,0,0,0.1);
     padding: 25px;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     color:black;
 }
 
@@ -220,5 +220,11 @@ form{
 @media only screen and (max-width: 440px) {
 	.formText {
 	  width: 80vw;
+	}
+}
+
+@media only screen and (min-width: 1650px) {
+	#aboutMe {
+	  min-width: 79.2vw;
 	}
 }
