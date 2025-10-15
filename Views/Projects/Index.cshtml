@@ -1,0 +1,19 @@
+﻿@model List<Project>
+@{
+    ViewData["Title"] = "Project List";
+}
+
+<h2>
+    My Project List
+</h2>
+
+<div>
+    @foreach (var project in Model)
+    {
+        <div class="project-card">
+            <h3>@project.Title</h3>
+            <p>@project.Description</p>
+            <a href="@project.ProjectUrl" target="_blank">Look at project</a>
+        </div>    
+    }
+</div>
