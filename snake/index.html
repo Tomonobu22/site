@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game</title>
+	<link rel="icon" href="../images/icon.png">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/cdbba87284.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav class="navbar bckTop">
+        <div class="container-fluid">
+			<a class="navbar-brand" href="../index.html">
+				<img src="../images/icon.png" alt="logo" width="auto" height="30" style="filter:brightness(2.5)" class="d-inline-block align-text-top">
+			</a>
+			<h5 class="title" style="color: rgb(236, 223, 223);">Breakout Game</h5>
+        </div>
+    </nav>
+	<div class="content">
+		<div class="score"></div>
+		<div class="bg-animation">
+			<div class="section">
+			</div>
+			<div id="gameOver">
+				<p>GAME OVER</p>
+				<p class="gameOver-score"></p>
+				<button>Try Again</button>
+			</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

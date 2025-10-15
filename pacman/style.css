@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {	
+	font-family: 'Play', sans-serif;
+}
+
+/* Navigation */
+
+.bckTop {
+	display: fixed;
+	background-color:#6885b1;
+}
+
+/* Content */
+
+.content{
+	padding-top: 10px;
+	max-width: 500px;
+	margin: auto;
+}
+
+#errorScreen{
+	display: none;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 420px;
+	height: 540px;
+}
+
+.grid div{
+	width: 20px;
+	height: 20px;
+}
+
+.pac-dot{
+	background-color: #68b1a5;
+	border: 5px solid #FFF;
+	box-sizing: border-box;
+}
+
+.wall {
+	background-color: #6885b1;
+}
+
+.ghost-lair{
+	background-color: #8cf;
+}
+
+.power-pellet {
+	background-color: #79b168;
+	border-radius: 10px;
+}
+
+.blinky{
+	background: url(./red.png);
+	background-size: cover;
+	background-position: center center;
+	border: 0px;
+}
+
+.pinky{
+	background: url(./pink.png);
+	background-size: cover;
+	background-position: center center;
+	border: 0px;
+}
+
+.inky{
+	background: url(./blue.png);
+	background-size: cover;
+	background-position: center center;
+	border: 0px;
+}
+
+.clyde{
+	background: url(./orange.png);
+	background-size: cover;
+	background-position: center center;
+	border: 0px;
+}
+
+.scared-ghost{
+	background-color: aquamarine;
+	border: 0px;
+}
+
+.pac-man {
+	background-color: #FFFF00;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.start{
+	margin-bottom: 10px;
+}
+
+.backLair {
+	background-color: #8cf;
+}
+
+.pac-man-right{
+	box-shadow: yellowgreen 2px 0;
+}
+.pac-man-left{
+	box-shadow: yellowgreen -2px 0;
+}
+.pac-man-up{
+	box-shadow: yellowgreen 0 -2px;
+}
+.pac-man-down{
+	box-shadow: yellowgreen 0 2px;
+}
+
+@media only screen and (max-width: 580px) {
+	#game {
+		visibility: hidden;
+	}
+	#errorScreen{
+		width: 50vw;
+		display: inline-block;
+	}
+  }

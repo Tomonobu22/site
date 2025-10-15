@@ -1,0 +1,90 @@
+*{
+	font-family: 'Play', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Navigation */
+
+h5 {
+	font-size: 1.25rem;
+	margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.navbar {
+	box-sizing: border-box;
+	position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+	padding-right: 1rem!important;
+    padding-left: 1rem!important;
+}
+
+.container-fluid {
+	display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+	width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+}
+
+.navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.bckTop {
+	display: fixed;
+	background-color:#6885b1;
+}
+
+/* Carousel */
+
+.carousel-container, .video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    max-width: 650px;
+}
+
+.d-block {
+    height: 500px;
+    width: 650px;
+    object-fit: contain;
+    margin: auto;
+    background-color: black;
+    
+}
+
+video {
+    width: 650px; 
+    height: 487.5px;
+}
+
+@media only screen and (max-width: 650px){
+    video, .d-block {
+      width: 300px;
+      height: 225px;
+    }
+
+    .carousel {
+        max-width: 300px;
+    }
+}
+  
