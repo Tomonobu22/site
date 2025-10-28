@@ -106,32 +106,6 @@ body{
 	animation: text_reveal .5s ease forwards;
 }
 
-.portfolio {
-	margin-top: 10px;
-	text-decoration: none;
-	color: transparent;
-	font-size: 1.5em;
-	background-color: transparent;
-	letter-spacing: 2px;
-	padding: 5px;
-	border-radius: 5px;
-	border: 2px solid transparent;
-	width: fit-content;
-	animation: port_reveal 1s ease forwards;
-	animation-delay: 4s;
-}
-
-.portfolio:hover{
-	background-color: rgba(104, 133, 177, 0.4);
-}
-
-@keyframes port_reveal {
-	100%{
-		color: black;
-		border-color: #24252A;
-	}
-}
-
 @keyframes text_reveal_box {
 	50%{
 		width:100%;
@@ -188,7 +162,7 @@ body{
 	object-fit: contain;
 }
 
-#projects {
+.band {
 	margin-bottom: 0;
 }
 
@@ -224,7 +198,7 @@ form{
 }
 
 @media only screen and (min-width: 1650px) {
-	#aboutMe {
+	#aboutMeDiv {
 	  min-width: 79.2vw;
 	}
 }

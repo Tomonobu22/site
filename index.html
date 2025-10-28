@@ -17,136 +17,134 @@
             <a class="navbar-brand" href="./index.html">
                 <img src="./images/icon.png" alt="logo" width="auto" height="30" style="filter:brightness(2.5)" class="d-inline-block align-text-top">
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Portfolio</a>
-              <a class="nav-link" href="#">Contact</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
             </div>
-          </div>
         </div>
     </nav>
-    
-    <!-- CENTER -->
-    <section id="center">
-      <div class="centerCont">
-        <h3>Hi there!<span></span></h3>
-        <h3>I'm Tomonobu<span></span></h3>
-        <h3>Welcome..<span></span></h3>
-        <a href="#" type= "button" class="portfolio seeProjects">Portfolio</a>
-      </div>
-	  </section>
 
     <!-- ABOUT ME -->
-    <div id="aboutMe" class="container info">
-      <h2>About Me</h2>
-      <div>
-          <img id="photo" src="./images/photo.png" alt="Photograph of Tomonobu">
-      </div>
-      <div id="text">
-          <p>Hi, I'm Tomonobu. <br> Software Developer. <br>  While I was studying Mechatronics Engineering &#129302; in my home country (PERU), I took courses such as "Software for Engineering" and "Microcontrollers" where I learned to program in C and assembler. In addition, I opted to take electives courses related to programming and I was fascinated.
-          That's when I decided this was my way to go. After graduating, I decided to pursue a diploma in computer programming in Canada, which I just completed in December 2022. &#127891;</p>
-      </div>
-      <button id="letsTalk" class="button">Let's Talk</button>
-      <button class="button seeProjects">Portfolio</button>
+    <h2 id="aboutMe" class="band center headerText">About Me</h2>
+    <div id="aboutMeDiv" class="container info">
+        <div>
+            <img id="photo" src="./images/photo.png" alt="Photograph of Tomonobu">
+        </div>
+        <div id="text">
+            <p>
+                Hi, I'm Tomonobu. <br> Software Developer. <br>
+                While studying <strong>Mechatronics Engineering</strong> in my home country, I discovered my passion for software development through courses like <em>Software for Engineering</em> and <em>Microcontrollers</em>, where I learned programming in C and assembler.
+                After graduating, I continued exploring programming and later completed a <strong>Diploma in Computer Programming in Canada </strong> (2022). <br>
+                Since then, I’ve been working as a <strong>Software Developer</strong>, focusing on building scalable web applications and continuously learning new technologies.
+            </p>
+        </div>
+        <button id="letsTalk" class="button">Let's Talk</button>
+        <button class="button seeProjects">Portfolio</button>
     </div>
 
     <!-- PROJECTS -->
-    <h2 id="projects" class="center headerText">Portfolio</h2>
+    <h2 id="projects" class="band center headerText">Portfolio</h2>
 
     <div class="card-group centerProjects py-2">
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 78vw;">
             <div class="card-body center">
-              <i class="fab fa-html5" style="font-size: 24px;"></i>
-              <i class="fab fa-css3-alt" style="font-size: 24px;"></i>
-              <i class="fab fa-js-square" style="font-size: 24px;"></i>
-              <i class="fab fa-bootstrap" style="font-size: 24px;"></i>
-              <i class="fab fa-react" style="font-size: 24px;"></i>
-              <i class="fab fa-node-js" style="font-size: 24px;"></i>
-              <i class="fab fa-python" style="font-size: 24px;"></i>
-              <i class="fab fa-sass" style="font-size: 24px;"></i>
-              <i class="fab fa-github" style="font-size: 24px;"></i>
+                <i class="fab fa-html5" style="font-size: 24px;"></i>
+                <i class="fab fa-css3-alt" style="font-size: 24px;"></i>
+                <i class="fab fa-js-square" style="font-size: 24px;"></i>
+                <i class="fab fa-bootstrap" style="font-size: 24px;"></i>
+                <i class="fab fa-react" style="font-size: 24px;"></i>
+                <i class="fab fa-node-js" style="font-size: 24px;"></i>
+                <i class="fab fa-python" style="font-size: 24px;"></i>
+                <i class="fab fa-sass" style="font-size: 24px;"></i>
+                <i class="fab fa-github" style="font-size: 24px;"></i>
             </div>
         </div>
 
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-          <a href="./pacman/index.html"><img src="./pacman/pacman.png" class="card-img-top app" alt="PacMan Image"></a>
+            <a href="./pacman/index.html"><img src="./pacman/pacman.png" class="card-img-top app" alt="PacMan Image"></a>
             <div class="card-body">
-              <h5 class="card-title">Pacman Game</h5>
-              <p class="card-text">The objective of the game is to eat all of the dots placed in the maze while avoiding four colored ghosts - Blinky (red), Pinky (pink), Inky (cyan), and Clyde (orange) - that pursue him. (Wikipedia)</p>
-              <a href="./pacman/index.html" class="button">Let's Play</a>
+                <h5 class="card-title">Pacman Game</h5>
+                <p class="card-text">The objective of the game is to eat all of the dots placed in the maze while avoiding four colored ghosts - Blinky (red), Pinky (pink), Inky (cyan), and Clyde (orange) - that pursue him. (Wikipedia)</p>
+                <a href="./pacman/index.html" class="button">Let's Play</a>
             </div>
         </div>
-        
+
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-          <a href="./pokemon/public/index.html"><img src="./pokemon/pokemon.jpg" class="card-img-top app" alt="Pokemon Image"></a>
-          <div class="card-body">
-            <h5 class="card-title">Pokemon Guess Game</h5>
-            <p class="card-text">Try to guess the name of the pokemon. You have three lives in each puzzle. You will lose one of them by selecting a letter that does not correspond to the name. Are you ready for this challenge?</p>
-            <a href="./pokemon/public/index.html" class="button">Let's Play</a>
-          </div>
-        </div>
-        
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-          <a href="https://tomonobu22.github.io/WeatherReactApp/" target="_blank"><img src="./images/weather.png" class="card-img-top app" alt="Weather App"></a>
-          <div class="card-body">
-            <h5 class="card-title">Weather App</h5>
-            <p class="card-text">This is a simple application to see the weather parameters in various parts of the world. You can see information such as temperature, humidity and wind speed. Try entering your city to see today's weather!</p>
-            <a href="https://tomonobu22.github.io/WeatherReactApp/" target="_blank" class="button">Let's Play</a>
-          </div>
-        </div>
-        
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-          <a href="./snake/index.html"><img src="./snake/snake.png" class="card-img-top app" alt="Snake Game Logo"></a>
-          <div class="card-body">
-            <h5 class="card-title">Snake Game</h5>
-            <p class="card-text">This is a classic! Try to eat as much food as possible. You will grow more and more, with which you will accumulate points. Be careful! do not collide with the edges of the map, nor with your own body!</p>
-            <a href="./snake/index.html" class="button">Let's Play</a>
-          </div>
-        </div>
-        
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-          <a href="./blocks/index.html"><img src="./blocks/blocks.png" class="card-img-top app" alt="Destroy Blocks Game Logo"></a>
-          <div class="card-body">
-            <h5 class="card-title">Bricks Breaking Game</h5>
-            <p class="card-text">In this game you will have to destroy the small blocks that are at the top. Worry that the ball does not hit the ground. For this you will have a small bar at the bottom that you can move it across.
-            </p>
-            <a href="./blocks/index.html" class="button">Let's Play</a>
-          </div>
+            <a href="./pokemon/public/index.html"><img src="./pokemon/pokemon.jpg" class="card-img-top app" alt="Pokemon Image"></a>
+            <div class="card-body">
+                <h5 class="card-title">Pokemon Guess Game</h5>
+                <p class="card-text">Try to guess the name of the pokemon. You have three lives in each puzzle. You will lose one of them by selecting a letter that does not correspond to the name. Are you ready for this challenge?</p>
+                <a href="./pokemon/public/index.html" class="button">Let's Play</a>
+            </div>
         </div>
 
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-          <a href="https://tomonobu22.github.io/react_todoList" target="_blank"><img src="./images/todoListApp.png" class="card-img-top app" alt="ToDo List App Logo"></a>
-          <div class="card-body">
-            <h5 class="card-title">To-Do List</h5>
-            <p class="card-text"> Classic task manager application. Here you can add or delete tasks. You can also mark tasks as done.
-            </p>
-            <a href="https://tomonobu22.github.io/react_todoList" target="_blank" class="button">Let's Try</a>
-          </div>
+            <a href="https://tomonobu22.github.io/WeatherReactApp/" target="_blank"><img src="./images/weather.png" class="card-img-top app" alt="Weather App"></a>
+            <div class="card-body">
+                <h5 class="card-title">Weather App</h5>
+                <p class="card-text">This is a simple application to see the weather parameters in various parts of the world. You can see information such as temperature, humidity and wind speed. Try entering your city to see today's weather!</p>
+                <a href="https://tomonobu22.github.io/WeatherReactApp/" target="_blank" class="button">Let's Play</a>
+            </div>
         </div>
 
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-          <a href="https://github.com/Tomonobu22/OOP345_cpp.git" target="_blank"><img src="./images/assemblyLine.png" class="card-img-top app" alt="Destroy Blocks Game Logo"></a>
-          <div class="card-body">
-            <h5 class="card-title">Assembly Line (C++)</h5>
-            <p class="card-text">The assembly line consists of a set of workstations. A line manager moves customer orders along the line filling the orders at each station as requested.
-            </p>
-            <a href="https://github.com/Tomonobu22/OOP345_cpp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 18px;"></i></a>
-          </div>
+            <a href="./snake/index.html"><img src="./snake/snake.png" class="card-img-top app" alt="Snake Game Logo"></a>
+            <div class="card-body">
+                <h5 class="card-title">Snake Game</h5>
+                <p class="card-text">This is a classic! Try to eat as much food as possible. You will grow more and more, with which you will accumulate points. Be careful! do not collide with the edges of the map, nor with your own body!</p>
+                <a href="./snake/index.html" class="button">Let's Play</a>
+            </div>
         </div>
 
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-          <a href="https://github.com/Tomonobu22/OOP244_cpp.git" target="_blank"><img src="./images/emergencyMng.png" class="card-img-top app" alt="Destroy Blocks Game Logo"></a>
-          <div class="card-body">
-            <h5 class="card-title">Disaster and Emergency Aid Management (C++)</h5>
-            <p class="card-text"> The application manages the list of items needed to be shipped to an emergency area. It keeps track of the quantity of each item needed, the number of items on hand, the products shipped, the price and the expiry date of each product.
-            </p>
-            <a href="https://github.com/Tomonobu22/OOP244_cpp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 18px;"></i></a>
-          </div>
+            <a href="./blocks/index.html"><img src="./blocks/blocks.png" class="card-img-top app" alt="Destroy Blocks Game Logo"></a>
+            <div class="card-body">
+                <h5 class="card-title">Bricks Breaking Game</h5>
+                <p class="card-text">
+                    In this game you will have to destroy the small blocks that are at the top. Worry that the ball does not hit the ground. For this you will have a small bar at the bottom that you can move it across.
+                </p>
+                <a href="./blocks/index.html" class="button">Let's Play</a>
+            </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
+            <a href="https://tomonobu22.github.io/react_todoList" target="_blank"><img src="./images/todoListApp.png" class="card-img-top app" alt="ToDo List App Logo"></a>
+            <div class="card-body">
+                <h5 class="card-title">To-Do List</h5>
+                <p class="card-text">
+                    Classic task manager application. Here you can add or delete tasks. You can also mark tasks as done.
+                </p>
+                <a href="https://tomonobu22.github.io/react_todoList" target="_blank" class="button">Let's Try</a>
+            </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
+            <a href="https://github.com/Tomonobu22/OOP345_cpp.git" target="_blank"><img src="./images/assemblyLine.png" class="card-img-top app" alt="Destroy Blocks Game Logo"></a>
+            <div class="card-body">
+                <h5 class="card-title">Assembly Line (C++)</h5>
+                <p class="card-text">
+                    The assembly line consists of a set of workstations. A line manager moves customer orders along the line filling the orders at each station as requested.
+                </p>
+                <a href="https://github.com/Tomonobu22/OOP345_cpp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 18px;"></i></a>
+            </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
+            <a href="https://github.com/Tomonobu22/OOP244_cpp.git" target="_blank"><img src="./images/emergencyMng.png" class="card-img-top app" alt="Destroy Blocks Game Logo"></a>
+            <div class="card-body">
+                <h5 class="card-title">Disaster and Emergency Aid Management (C++)</h5>
+                <p class="card-text">
+                    The application manages the list of items needed to be shipped to an emergency area. It keeps track of the quantity of each item needed, the number of items on hand, the products shipped, the price and the expiry date of each product.
+                </p>
+                <a href="https://github.com/Tomonobu22/OOP244_cpp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 18px;"></i></a>
+            </div>
         </div>
 
         <!-- <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
@@ -157,37 +155,37 @@
             <a href="./pacman/index.html" class="button">Let's Play</a>
           </div>
         </div> -->
-      </div>
+    </div>
 
     <!-- CONTACT ME -->
-    <div id="contactMe" >
-      <h2 class="headerText">Contact Me</h2>
-      <!-- action="https://httpbin.org/post" -->
-      <form id="messageForm" action="https://formsubmit.co/399c41a8bae145d3a64501b36a35d804" method="POST" onsubmit="return validateForm()">
-          <input type="hidden" name="_subject" value="New submission!">
-          <input type="hidden" name="_next" value="https://tomonobu22.github.io/site">
-          <h4 class="center">GET IN TOUCH</h4>
-          <p class="center"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;tomonobu.ft@gmail.com</p><br>
-          <div class="mb-3 formText">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="name" required="required" placeholder="Insert your name" onchange="validateName()">
-            <small class="error"></small>
-          </div>
-          <div class="mb-3 formText">
-            <label for="email" class="form-label">Email</label>
-            <input type="text" class="form-control" id="email" name="email" required="required" placeholder="Insert you email" onchange="emailIsValid()">
-            <small class="error"></small>
-          </div>
-          <div class="mb-3 formText">
-            <label for="message" class="form-label">Message</label>
-            <textarea required="requiered" id="message" name="message" class="form-control" style="resize: none;"></textarea> 
-          </div>
-          <button type="submit" class="button">Submit</button>
-      </form>
+    <div id="contactMe">
+        <h2 class="headerText">Contact Me</h2>
+        <!-- action="https://httpbin.org/post" -->
+        <form id="messageForm" action="https://formsubmit.co/399c41a8bae145d3a64501b36a35d804" method="POST" onsubmit="return validateForm()">
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_next" value="https://tomonobu22.github.io/site">
+            <h4 class="center">GET IN TOUCH</h4>
+            <p class="center"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;tomonobu.ft@gmail.com</p><br>
+            <div class="mb-3 formText">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required="required" placeholder="Insert your name" onchange="validateName()">
+                <small class="error"></small>
+            </div>
+            <div class="mb-3 formText">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" name="email" required="required" placeholder="Insert you email" onchange="emailIsValid()">
+                <small class="error"></small>
+            </div>
+            <div class="mb-3 formText">
+                <label for="message" class="form-label">Message</label>
+                <textarea required="requiered" id="message" name="message" class="form-control" style="resize: none;"></textarea>
+            </div>
+            <button type="submit" class="button">Submit</button>
+        </form>
     </div>
 
     <script src="./js/app.js"></script>
-     <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

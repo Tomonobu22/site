@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
-* {	
+* {
 	font-family: 'Play', sans-serif;
 }
 
@@ -8,18 +8,44 @@
 
 .bckTop {
 	display: fixed;
-	background-color:#6885b1;
+	background-color: #6885b1;
 }
+
+/* Buttons */
+
+.gameBtn {
+	padding: 0.6rem 1.2rem;
+	font-size: 1rem;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	color: #000;
+	font-weight: bold;
+	outline: none;
+}
+
+.controlBtn {
+	background-color: #a8e6cf;
+}
+
+.resumeBtn {
+	background-color: #ffd3b6;
+}
+
+.gameButtonsContainer {
+	margin-bottom: 0.6rem;
+}
+
 
 /* Content */
 
-.content{
+.content {
 	padding-top: 10px;
 	max-width: 500px;
 	margin: auto;
 }
 
-#errorScreen{
+#errorScreen {
 	display: none;
 }
 
@@ -30,13 +56,13 @@
 	height: 540px;
 }
 
-.grid div{
-	width: 20px;
-	height: 20px;
-}
+	.grid div {
+		width: 20px;
+		height: 20px;
+	}
 
-.pac-dot{
-	background-color: #68b1a5;
+.pac-dot {
+	background-color: #a8e6cf;
 	border: 5px solid #FFF;
 	box-sizing: border-box;
 }
@@ -45,7 +71,7 @@
 	background-color: #6885b1;
 }
 
-.ghost-lair{
+.ghost-lair {
 	background-color: #8cf;
 }
 
@@ -92,7 +118,8 @@
 	box-sizing: border-box;
 	border-radius: 10px;
 }
-.start{
+
+.start {
 	margin-bottom: 10px;
 }
 
@@ -100,16 +127,19 @@
 	background-color: #8cf;
 }
 
-.pac-man-right{
+.pac-man-right {
 	box-shadow: yellowgreen 2px 0;
 }
-.pac-man-left{
+
+.pac-man-left {
 	box-shadow: yellowgreen -2px 0;
 }
-.pac-man-up{
+
+.pac-man-up {
 	box-shadow: yellowgreen 0 -2px;
 }
-.pac-man-down{
+
+.pac-man-down {
 	box-shadow: yellowgreen 0 2px;
 }
 
@@ -117,8 +147,9 @@
 	#game {
 		visibility: hidden;
 	}
-	#errorScreen{
+
+	#errorScreen {
 		width: 50vw;
 		display: inline-block;
 	}
-  }
+}
