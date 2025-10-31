@@ -38,12 +38,10 @@
             <img id="photo" src="./images/photo.png" alt="Photograph of Tomonobu">
         </div>
         <div id="text">
-            <p>
-                Hi, I'm Tomonobu. <br> Software Developer. <br>
-                While studying <strong>Mechatronics Engineering</strong> in my home country, I discovered my passion for software development through courses like <em>Software for Engineering</em> and <em>Microcontrollers</em>, where I learned programming in C and assembler.
-                After graduating, I continued exploring programming and later completed a <strong>Diploma in Computer Programming in Canada </strong> (2022). <br>
-                Since then, I’ve been working as a <strong>Software Developer</strong>, focusing on building scalable web applications and continuously learning new technologies.
-            </p>
+            <p>Hi, I'm Tomonobu. <br> Software Developer. <br></p>
+            <p>While studying Mechatronics Engineering in my home country, I discovered my passion for software development through courses like Software for Engineering and Microcontrollers, where I learned programming in C and assembler. After graduating, I continued exploring programming and later completed a Diploma in Computer Programming in Canada (2022).</p>
+
+            <p>Since then, I’ve been working as a Software Developer, developing and maintaining web applications primarily using .NET, while also gaining experience in automated testing for web and mobile apps with Playwright, Appium, and K6.</p>
         </div>
         <button id="letsTalk" class="button">Let's Talk</button>
         <button class="button seeProjects">Portfolio</button>
@@ -55,6 +53,7 @@
     <div class="card-group centerProjects py-2">
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 78vw;">
             <div class="card-body center">
+                <i class="fab fa-database" style="font-size: 24px;"></i>
                 <i class="fab fa-html5" style="font-size: 24px;"></i>
                 <i class="fab fa-css3-alt" style="font-size: 24px;"></i>
                 <i class="fab fa-js-square" style="font-size: 24px;"></i>
@@ -67,103 +66,91 @@
             </div>
         </div>
 
+
+        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
+            <a href="https://github.com/Tomonobu22/BudgetTracker.git" target="_blank"><img src="./images/budgetTracker.png" class="card-img-top app" alt="BudgetTracker Image"></a>
+            <div class="card-body">
+                <h5 class="card-title">Personal Finance Tracker <span class="badge bg-warning text-dark">In Progress</span></h5>
+                <p class="card-subtitle text-muted mb-2">
+                    ASP.NET Core MVC · EF Core · SQL Server · Azure · ASP.NET Identity
+                </p>
+                <p class="card-text">
+                    A web app to track and visualize income, expenses, and investments with CRUD operations, authentication, and reporting features.
+                </p>
+                <ul class="mb-2">
+                    <li>Setup EF Core with <code>AppDbContext</code> and models (Income, Expense, Investment)</li>
+                    <li>Scaffolded CRUD (Controllers + Views)</li>
+                    <li>Added controllers, services, and repositories</li>
+                    <li>Integrated ASP.NET Core Identity</li>
+                    <li>Deployed to Azure App Service & Azure SQL Database</li>
+                    <li>Ongoing: UI improvements & data visualization</li>
+                </ul>
+                <p class="text-muted small mb-0">
+                    Started: October 27, 2025
+                </p>
+                <div>
+                    <a href="https://github.com/Tomonobu22/BudgetTracker.git" class="button" target="_blank">
+                        <i class="bi bi-github"></i> GitHub <i class="fab fa-github" style="font-size: 18px;"></i>
+                    </a>
+                    <a href="https://budgettracker-h9brhqfedkb5fxd2.canadacentral-01.azurewebsites.net" class="button" target="_blank">
+                        <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
             <a href="./pacman/index.html"><img src="./pacman/pacman.png" class="card-img-top app" alt="PacMan Image"></a>
             <div class="card-body">
-                <h5 class="card-title">Pacman Game</h5>
-                <p class="card-text">The objective of the game is to eat all of the dots placed in the maze while avoiding four colored ghosts - Blinky (red), Pinky (pink), Inky (cyan), and Clyde (orange) - that pursue him. (Wikipedia)</p>
-                <a href="./pacman/index.html" class="button">Let's Play</a>
+                <h5 class="card-title">🕹️ Pac-Man Game <span class="badge bg-info text-dark">Practice Project</span></h5>
+                <p class="card-subtitle text-muted mb-2">HTML · CSS · JavaScript</p>
+                <p class="card-text">
+                    A browser-based Pac-Man clone developed to practice DOM manipulation, grid-based movement, and
+                    basic game logic using vanilla JavaScript.
+                </p>
+                <ul class="mb-2">
+                    <li>Implemented player and ghost movement</li>
+                    <li>Used CSS for maze layout and animations</li>
+                    <li>Score and game-over logic handled in JavaScript</li>
+                </ul>
+                <p class="text-muted small mb-0">
+                    Completed: 2022
+                </p>
+                <div>
+                    <a href="./pacman/index.html" class="button">Let's Play</a>
+                </div>
+
             </div>
         </div>
-
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-            <a href="./pokemon/public/index.html"><img src="./pokemon/pokemon.jpg" class="card-img-top app" alt="Pokemon Image"></a>
-            <div class="card-body">
-                <h5 class="card-title">Pokemon Guess Game</h5>
-                <p class="card-text">Try to guess the name of the pokemon. You have three lives in each puzzle. You will lose one of them by selecting a letter that does not correspond to the name. Are you ready for this challenge?</p>
-                <a href="./pokemon/public/index.html" class="button">Let's Play</a>
-            </div>
-        </div>
-
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
             <a href="https://tomonobu22.github.io/WeatherReactApp/" target="_blank"><img src="./images/weather.png" class="card-img-top app" alt="Weather App"></a>
             <div class="card-body">
-                <h5 class="card-title">Weather App</h5>
-                <p class="card-text">This is a simple application to see the weather parameters in various parts of the world. You can see information such as temperature, humidity and wind speed. Try entering your city to see today's weather!</p>
-                <a href="https://tomonobu22.github.io/WeatherReactApp/" target="_blank" class="button">Let's Play</a>
-            </div>
-        </div>
-
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-            <a href="./snake/index.html"><img src="./snake/snake.png" class="card-img-top app" alt="Snake Game Logo"></a>
-            <div class="card-body">
-                <h5 class="card-title">Snake Game</h5>
-                <p class="card-text">This is a classic! Try to eat as much food as possible. You will grow more and more, with which you will accumulate points. Be careful! do not collide with the edges of the map, nor with your own body!</p>
-                <a href="./snake/index.html" class="button">Let's Play</a>
-            </div>
-        </div>
-
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-            <a href="./blocks/index.html"><img src="./blocks/blocks.png" class="card-img-top app" alt="Destroy Blocks Game Logo"></a>
-            <div class="card-body">
-                <h5 class="card-title">Bricks Breaking Game</h5>
+                <h5 class="card-title">Weather App <span class="badge bg-info text-dark">Learning React</span></h5>
+                <p class="card-subtitle text-muted mb-2">React · OpenWeather API</p>
                 <p class="card-text">
-                    In this game you will have to destroy the small blocks that are at the top. Worry that the ball does not hit the ground. For this you will have a small bar at the bottom that you can move it across.
+                    A simple weather dashboard built with React that fetches and displays live weather data from
+                    the OpenWeather API. Uses React hooks for state and effect management.
                 </p>
-                <a href="./blocks/index.html" class="button">Let's Play</a>
+                <ul class="mb-2">
+                    <li>Fetches live data from OpenWeather API</li>
+                    <li>Shows temperature, humidity, and weather conditions</li>
+                </ul>
+                <p class="text-muted small mb-0">
+                    Completed: 2023
+                </p>
+                <div>
+                    <a href="https://github.com/Tomonobu22/WeatherReactApp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 18px;"></i></a>
+                    <a href="https://tomonobu22.github.io/WeatherReactApp/" class="button" target="_blank">
+                        <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                    </a>
+                </div>
             </div>
         </div>
-
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-            <a href="https://tomonobu22.github.io/react_todoList" target="_blank"><img src="./images/todoListApp.png" class="card-img-top app" alt="ToDo List App Logo"></a>
-            <div class="card-body">
-                <h5 class="card-title">To-Do List</h5>
-                <p class="card-text">
-                    Classic task manager application. Here you can add or delete tasks. You can also mark tasks as done.
-                </p>
-                <a href="https://tomonobu22.github.io/react_todoList" target="_blank" class="button">Let's Try</a>
-            </div>
-        </div>
-
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-            <a href="https://github.com/Tomonobu22/OOP345_cpp.git" target="_blank"><img src="./images/assemblyLine.png" class="card-img-top app" alt="Destroy Blocks Game Logo"></a>
-            <div class="card-body">
-                <h5 class="card-title">Assembly Line (C++)</h5>
-                <p class="card-text">
-                    The assembly line consists of a set of workstations. A line manager moves customer orders along the line filling the orders at each station as requested.
-                </p>
-                <a href="https://github.com/Tomonobu22/OOP345_cpp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 18px;"></i></a>
-            </div>
-        </div>
-
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-            <a href="https://github.com/Tomonobu22/OOP244_cpp.git" target="_blank"><img src="./images/emergencyMng.png" class="card-img-top app" alt="Destroy Blocks Game Logo"></a>
-            <div class="card-body">
-                <h5 class="card-title">Disaster and Emergency Aid Management (C++)</h5>
-                <p class="card-text">
-                    The application manages the list of items needed to be shipped to an emergency area. It keeps track of the quantity of each item needed, the number of items on hand, the products shipped, the price and the expiry date of each product.
-                </p>
-                <a href="https://github.com/Tomonobu22/OOP244_cpp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 18px;"></i></a>
-            </div>
-        </div>
-
-        <!-- <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-          <a href="https://guarded-inlet-93508.herokuapp.com" target="_blank"><img src="./web322/web322.png" class="card-img-top app" alt="PacMan Image"></a>
-          <div class="card-body">
-            <h5 class="card-title">Blog</h5>
-            <p class="card-text"> Website developed at college. This is a blog to publish content on different topics. The user must register to have access to publish or modify the posts and categories.</p>
-            <a href="./pacman/index.html" class="button">Let's Play</a>
-          </div>
-        </div> -->
     </div>
 
     <!-- CONTACT ME -->
     <div id="contactMe">
         <h2 class="headerText">Contact Me</h2>
-        <!-- action="https://httpbin.org/post" -->
-        <form id="messageForm" action="https://formsubmit.co/399c41a8bae145d3a64501b36a35d804" method="POST" onsubmit="return validateForm()">
-            <input type="hidden" name="_subject" value="New submission!">
-            <input type="hidden" name="_next" value="https://tomonobu22.github.io/site">
+        <form id="messageForm" action="https://formspree.io/f/mrboyyqy" method="POST" onsubmit="return validateForm()">
             <h4 class="center">GET IN TOUCH</h4>
             <p class="center"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;tomonobu.ft@gmail.com</p><br>
             <div class="mb-3 formText">
@@ -178,7 +165,7 @@
             </div>
             <div class="mb-3 formText">
                 <label for="message" class="form-label">Message</label>
-                <textarea required="requiered" id="message" name="message" class="form-control" style="resize: none;"></textarea>
+                <textarea required="required" id="message" name="message" class="form-control" style="resize: none;"></textarea>
             </div>
             <button type="submit" class="button">Submit</button>
         </form>
