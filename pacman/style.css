@@ -42,7 +42,7 @@
 .content {
 	padding-top: 10px;
 	max-width: 500px;
-	margin: auto;
+	margin: 25px auto 100px auto;
 }
 
 #errorScreen {
