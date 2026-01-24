@@ -12,6 +12,16 @@ const result = document.getElementById("result");
 
 let jwtToken = null;
 let refreshToken = null;
+
+document.getElementById("username").addEventListener("change", (e) => {
+    jwtToken = null;
+    refreshToken = null;
+});
+document.getElementById("password").addEventListener("change", (e) => {
+    jwtToken = null;
+    refreshToken = null;
+});
+
 openLoginBtn.addEventListener("click", () => {
     loginBox.classList.toggle("hidden");
 });
