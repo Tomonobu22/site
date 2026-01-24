@@ -202,3 +202,35 @@ form{
 	  min-width: 79.2vw;
 	}
 }
+
+/*Budget Tracker*/
+.hidden {
+	display: none;
+}
+
+.box {
+	border: 1px solid #ccc;
+	padding: 20px;
+	max-width: 400px;
+	margin-top: 20px;
+}
+
+input {
+	width: 100%;
+	padding: 8px;
+	margin-top: 10px;
+}
+
+button {
+	margin-top: 15px;
+	padding: 10px;
+	width: 100%;
+	cursor: pointer;
+}
+
+pre {
+	background: #f4f4f4;
+	padding: 10px;
+	margin-top: 15px;
+	overflow-x: auto;
+}
