@@ -177,10 +177,10 @@ pages.forEach(element => {
     })
 });
 
-document.getElementById("letsTalk").addEventListener("click", function(event) {
-    event.preventDefault();
-    window.scrollTo(0,contactMe.offsetTop);
-});
+//document.getElementById("letsTalk").addEventListener("click", function(event) {
+//    event.preventDefault();
+//    window.scrollTo(0,contactMe.offsetTop);
+//});
 
 var seeProjects = document.querySelectorAll(".seeProjects");
 seeProjects.forEach(element => {

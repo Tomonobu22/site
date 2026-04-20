@@ -80,29 +80,29 @@
 	border-radius: 10px;
 }
 
-.blinky{
-	background: url(./red.png);
+.blinky {
+	background: url(./assets/red.png);
 	background-size: cover;
 	background-position: center center;
 	border: 0px;
 }
 
-.pinky{
-	background: url(./pink.png);
+.pinky {
+	background: url(./assets/pink.png);
 	background-size: cover;
 	background-position: center center;
 	border: 0px;
 }
 
-.inky{
-	background: url(./blue.png);
+.inky {
+	background: url(./assets/blue.png);
 	background-size: cover;
 	background-position: center center;
 	border: 0px;
 }
 
-.clyde{
-	background: url(./orange.png);
+.clyde {
+	background: url(./assets/orange.png);
 	background-size: cover;
 	background-position: center center;
 	border: 0px;
@@ -153,3 +153,96 @@
 		display: inline-block;
 	}
 }
+
+
+/*body {
+	background: #0f172a;
+	color: #e2e8f0;
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#game {
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(21, 20px);*/
+	/*gap: 2px;*/
+	/*margin: 20px auto;
+}
+
+	.grid div {
+		width: 20px;
+		height: 20px;
+	}
+
+.wall {
+	background-color: #1e293b;
+}
+
+.pac-dot {
+	background-color: #a8e6cf;
+	border-radius: 50%;
+	border: 5px solid #FFF;
+	box-sizing: border-box;
+}
+
+
+.power-pellet {
+	background-color: #79b168;
+	border-radius: 10px;
+}
+
+.pinky {
+	background: url(./assets/pink.png);
+	background-size: cover;
+	background-position: center center;
+	border: 0px;
+}
+
+.blinky {
+	background: url(./assets/red.png);
+	background-size: cover;
+	background-position: center center;
+	border: 0px;
+}
+
+.inky {
+	background: url(./assets/blue.png);
+	background-size: cover;
+	background-position: center center;
+	border: 0px;
+}
+
+.clyde {
+	background: url(./assets/orange.png);
+	background-size: cover;
+	background-position: center center;
+	border: 0px;
+}
+
+.pac-man {
+	background-color: #FFFF00;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #0094ff;
+}
+
+button {
+	background: #22c55e;
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: 0.2s;
+}
+
+	button:hover {
+		transform: scale(1.05);
+	}*/
