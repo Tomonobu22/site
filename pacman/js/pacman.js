@@ -8,7 +8,7 @@ export default class Pacman {
         this.points = 0;
         this.collidedWithGhost = false;
         this.isPowered = false;
-        this.powerEndTime = 0;
+        this.powerStartTime = 0;
     }
 
     move(squares) {
@@ -48,7 +48,7 @@ export default class Pacman {
         else if (nextIndex === 294) nextIndex = 273;
 
         const nextSquare = squares[nextIndex];
-        return nextSquare && !nextSquare.classList.contains('wall');
+        return nextSquare && !nextSquare.classList.contains('wall') && !nextSquare.classList.contains('ghost-lair');
     }
 
     reset(startIndex) {
@@ -57,5 +57,7 @@ export default class Pacman {
         this.nextDirection = null;
         this.points = 0;
         this.collidedWithGhost = false;
+        this.isPowered = false;
+        this.powerStartTime = 0;
     }
 }

@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let animationId;
     let isPaused = false;
     let gameInitialized = false;
-    let isGameOver = false;
+    let powerDuration = 8000;
 
     // Pacman controls
     document.addEventListener('keydown', (e) => {
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             animationId = requestAnimationFrame(gameLoop);
             pauseBtn.textContent = 'Pause';
         }
+        pauseBtn.blur(); // remove focus from button after click
     });
 
     // Start game loop when start button is clicked
@@ -70,14 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
         else {
             resetGame();
         }
+        startBtn.blur(); // remove focus from button after click
     });
 
 
     // Reset game state
     function resetGame() {
         cancelAnimationFrame(animationId);
-        isGameOver = false;
-
+        document.getElementById('power-bar').style.width = '0%';
         // hide gameOver
         const gameOver = document.getElementById('gameOver');
         gameOver.style.display = 'none';
@@ -122,25 +123,23 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentPacmanSquare.classList.contains('power-pellet')) {
             pacman.points += 50;
             pacman.isPowered = true;
-            pacman.powerEndTime = Date.now() + 10000; // 10 seconds
+            pacman.powerStartTime = Date.now();
             currentPacmanSquare.classList.remove('power-pellet');
             // Set ghosts to scared
-            ghosts.forEach(g => {
-                g.isScared = true;
-                g.isFlashing = false;
-            });
+            ghosts.forEach(g => g.isScared = true);
         }
 
         if (pacman.isPowered) {
-            const timeLeft = pacman.powerEndTime - Date.now();
-            if (timeLeft <= 0) {
+            const elapsed = Date.now() - pacman.powerStartTime;
+            const remaining = Math.max(powerDuration - elapsed, 0);
+
+            const percent = (remaining / powerDuration) * 100;
+
+            document.getElementById('power-bar').style.width = percent + '%';
+
+            if (remaining <= 0) {
                 pacman.isPowered = false;
-                ghosts.forEach(g => {
-                    g.isScared = false;
-                    g.isFlashing = false;
-                });
-            } else if (timeLeft < 2000 && g.isScared) {
-                ghosts.forEach(g => g.isFlashing = true);
+                ghosts.forEach(g => g.isScared = false);
             }
         }
 
@@ -168,7 +167,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (pacman.collidedWithGhost) {
-            isGameOver = true;
             cancelAnimationFrame(animationId);
             showGameOver(pacman.points);
             return; // stop the game loop
