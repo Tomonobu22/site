@@ -5,6 +5,10 @@ export default class Pacman {
         this.currentIndex = startIndex;
         this.direction = null;
         this.nextDirection = null;
+        this.points = 0;
+        this.collidedWithGhost = false;
+        this.isPowered = false;
+        this.powerEndTime = 0;
     }
 
     move(squares) {
@@ -20,7 +24,14 @@ export default class Pacman {
         }
 
         if (this.direction && this.canMove(this.direction, squares)) {
-            this.currentIndex += moves[this.direction];
+            let nextIndex = this.currentIndex + moves[this.direction];
+            this.currentIndex = nextIndex === 272 ? 293 : nextIndex === 294 ? 273 : nextIndex;
+            // Add points for pac-dot or power-pellet
+            const currentSquare = squares[this.currentIndex];
+            if (currentSquare.classList.contains('pac-dot')) {
+                this.points += 10;
+                currentSquare.classList.remove('pac-dot');
+            }
         }
     }
 
@@ -32,7 +43,19 @@ export default class Pacman {
             down: width
         };
 
-        const nextSquare = squares[this.currentIndex + moves[direction]];
+        let nextIndex = this.currentIndex + moves[direction];
+        if (nextIndex === 272) nextIndex = 293;
+        else if (nextIndex === 294) nextIndex = 273;
+
+        const nextSquare = squares[nextIndex];
         return nextSquare && !nextSquare.classList.contains('wall');
+    }
+
+    reset(startIndex) {
+        this.currentIndex = startIndex;
+        this.direction = null;
+        this.nextDirection = null;
+        this.points = 0;
+        this.collidedWithGhost = false;
     }
 }

@@ -37,18 +37,28 @@ export function createBoard(grid) {
         const square = document.createElement('div');
         grid.appendChild(square);
         squares.push(square);
-
-        const classMap = {
-            0: 'pac-dot',
-            1: 'wall',
-            2: 'ghost-lair',
-            3: 'power-pellet'
-        };
-
-        if (classMap[cell]) {
-            square.classList.add(classMap[cell]);
-        }
+        applyCellClass(square, cell);
     });
 
     return squares;
+}
+
+function applyCellClass(square, cell) {
+	const classMap = {
+		0: 'pac-dot',
+		1: 'wall',
+		2: 'ghost-lair',
+		3: 'power-pellet'
+	};
+
+	if (classMap[cell]) {
+		square.classList.add(classMap[cell]);
+	}
+}
+
+export function resetBoard(squares) {
+	squares.forEach((square, i) => {
+		square.className = '';
+		applyCellClass(square, layout[i]);
+	});
 }

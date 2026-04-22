@@ -5,6 +5,8 @@ export default class Ghost {
         this.currentIndex = startIndex;
         this.speed = speed;
         this.direction = null;
+        this.isScared = false;
+        this.isFlashing = false;
     }
 
     move(squares, width) {
@@ -24,5 +26,8 @@ export default class Ghost {
 
     reset() {
         this.currentIndex = this.startIndex;
+        this.direction = null;
+        this.isScared = false;
+        this.isFlashing = false;
     }
 }

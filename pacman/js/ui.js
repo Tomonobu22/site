@@ -31,3 +31,10 @@ export function drawGhost(square, ghost, isScared) {
 export function updateScore(element, score) {
     element.textContent = score;
 }
+
+export function showGameOver(score) {
+    const gameOver = document.getElementById('gameOver');
+
+    gameOver.style.display = 'block';
+    gameOver.textContent = `Game Over - Score: ${score}`;
+}
