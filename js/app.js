@@ -35,7 +35,7 @@ loginBtn.addEventListener("click", async (e) => {
         if (!jwtToken) {
             console.log("Requesting new token...");
             // Authentication request
-            const authResponse = await fetch('https://budgettracker-h9brhqfedkb5fxd2.canadacentral-01.azurewebsites.net/api/auth/login', {
+            const authResponse = await fetch('https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ loginBtn.addEventListener("click", async (e) => {
 
         // Call protected API
         if (jwtToken) {
-            const apiResponse = await fetch('https://budgettracker-h9brhqfedkb5fxd2.canadacentral-01.azurewebsites.net/api/ReportApi/GetReport', {
+            const apiResponse = await fetch('https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net/api/ReportApi/GetReport', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${jwtToken}`
@@ -64,7 +64,7 @@ loginBtn.addEventListener("click", async (e) => {
 
             if (!apiResponse.ok) {
                 if (apiResponse.status === 401 && refreshToken) {
-                    const authResponse = await fetch('https://budgettracker-h9brhqfedkb5fxd2.canadacentral-01.azurewebsites.net/api/auth/refresh-token', {
+                    const authResponse = await fetch('https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net/api/auth/refresh-token', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ loginBtn.addEventListener("click", async (e) => {
                     if (authResponse.ok) {
                         const authData = await authResponse.json();
                         jwtToken = authData.token;
-                        const apiResponse2 = await fetch('https://budgettracker-h9brhqfedkb5fxd2.canadacentral-01.azurewebsites.net/api/ReportApi/GetReport', {
+                        const apiResponse2 = await fetch('https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net/api/ReportApi/GetReport', {
                             method: 'GET',
                             headers: {
                                 'Authorization': `Bearer ${jwtToken}`
