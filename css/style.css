@@ -11,9 +11,9 @@ h2 {
 	font-family: 'Poppins', sans-serif;
 }
 
-body{
+/*body{
 	padding: 0 10%;
-}
+}*/
 
 .button
 {
@@ -28,8 +28,8 @@ body{
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
-	background-color: #6885b1;
-    border-color: #6885b1;
+	background-color: #1f2937; /* dark slate */
+    border-color: #1f2937; /* dark slate */
 	border: 1px solid transparent;
 	padding: 0.375rem 0.75rem;
 	font-size: 1rem;
@@ -50,7 +50,7 @@ body{
 
 .bckTop {
 	display: fixed;
-	background-color:#6885b1;
+	background-color: #1f2937; /* dark slate */
 }
 
 /* Center */
@@ -97,7 +97,7 @@ body{
 	top: 0px;
 	width: 0;
 	height: 100%;
-	background-color: #6885b1;
+	background-color: #1f2937; /* dark slate */
 	animation: text_reveal_box 1s ease;
 }
 
@@ -129,12 +129,12 @@ body{
 }
 
 /* About Me */
-.info {
-    background: rgba(0,0,0,0.1);
-    padding: 25px;
-    text-align: center;
-    /* margin: 0 auto; */
-    color:black;
+.aboutMeDiv {
+	background: rgba(0,0,0,0.1);
+	padding: 25px;
+	text-align: center;
+	/* margin: 0 auto; */
+	color: black;
 }
 
 #photo {
@@ -153,9 +153,10 @@ body{
 }
 
 /*Projects*/
-.centerProjects{
+.centerProjects {
 	justify-content: center;
-	background-color: rgb(238, 236, 236) ;
+	background-color: rgb(238, 236, 236);
+	padding: 0 10%;
 }
 
 .app{
@@ -171,11 +172,15 @@ body{
 }
 
 /* FORM */
-.headerText{
-    min-height: 8vh;
-    padding: 15px 0;
-    text-align: center;
-    background: url(../images/background1.jpg); 
+.headerText {
+	min-height: 8vh;
+	padding: 15px 0;
+	text-align: center;
+	/*background: url(../images/background1.jpg); */
+	background: linear-gradient(rgba(31,41,55,0.45), rgba(31,41,55,0.35)), url("clouds.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white
 }
 
 .formContent {

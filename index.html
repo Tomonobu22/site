@@ -33,48 +33,51 @@
 
     <!-- ABOUT ME -->
     <h2 id="aboutMe" class="band center headerText">About Me</h2>
-    <div id="aboutMeDiv" class="container info">
-        <div>
-            <img id="photo" src="./images/photo.png" alt="Photograph of Tomonobu">
+    <div class="aboutMeDiv row justify-content-center">
+        <div class="col-md-10 col-lg-7">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4">
+                    <div>
+                        <img id="photo" src="./images/photo.png" alt="Photograph of Tomonobu">
+                    </div>
+                    <div id="text">
+                        <p>Hi, I'm Tomonobu. <br> Software Developer. <br></p>
+
+                        <p>
+                            I began my journey in Mechatronics Engineering, where my curiosity for how things work
+                            naturally evolved into a passion for how software brings those things to life. During my
+                            studies, courses in Software for Engineering and Microcontrollers introduced me to
+                            programming in C and assembly—an experience that sparked a lasting interest in building
+                            and problem-solving through code.
+                        </p>
+
+                        <p>
+                            After graduating, I chose to dive deeper into software development, continuing to learn
+                            independently before moving to Canada to formalize my skills with a Diploma in Computer
+                            Programming in 2022.
+                        </p>
+
+                        <p>
+                            Today, I work as a Software Developer with nearly three years of experience, focusing on
+                            .NET web development. I enjoy building reliable, scalable applications using technologies
+                            like <strong>ASP.NET Core MVC</strong>, <strong>Web APIs</strong>, <strong>Razor Pages</strong>,
+                            and <strong>SQL databases</strong>.
+                        </p>
+
+                        <p>
+                            I also have hands-on experience with automated testing for both web and mobile applications,
+                            ensuring the software I build is not only functional, but robust and maintainable.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="text">
-            <p>Hi, I'm Tomonobu. <br> Software Developer. <br></p>
-
-            <p>
-                I began my journey in Mechatronics Engineering, where my curiosity for how things work
-                naturally evolved into a passion for how software brings those things to life. During my
-                studies, courses in Software for Engineering and Microcontrollers introduced me to
-                programming in C and assembly—an experience that sparked a lasting interest in building
-                and problem-solving through code.
-            </p>
-
-            <p>
-                After graduating, I chose to dive deeper into software development, continuing to learn
-                independently before moving to Canada to formalize my skills with a Diploma in Computer
-                Programming in 2022.
-            </p>
-
-            <p>
-                Today, I work as a Software Developer with nearly three years of experience, focusing on
-                .NET web development. I enjoy building reliable, scalable applications using technologies
-                like <strong>ASP.NET Core MVC</strong>, <strong>Web APIs</strong>, <strong>Razor Pages</strong>,
-                and <strong>SQL databases</strong>.
-            </p>
-
-            <p>
-                I also have hands-on experience with automated testing for both web and mobile applications,
-                ensuring the software I build is not only functional, but robust and maintainable.
-            </p>
-        </div>
-        <!--<button id="letsTalk" class="button">Let's Talk</button>-->
-        <!--<button class="button seeProjects">Portfolio</button>-->
     </div>
-
     <!-- PROJECTS -->
     <h2 id="projects" class="band center headerText">Portfolio</h2>
 
-    <div class="card-group centerProjects py-2">
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 78vw;">
+    <div class="row">
+        <div class="card col-12">
             <div class="card-body center">
                 <i class="fab fa-database" style="font-size: 24px;"></i>
                 <i class="fab fa-html5" style="font-size: 24px;"></i>
@@ -88,8 +91,9 @@
                 <i class="fab fa-github" style="font-size: 24px;"></i>
             </div>
         </div>
+    </div>
 
-
+    <div class="card-group centerProjects py-2">
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
             <a href="https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net" target="_blank"><img src="./images/budgetTracker.png" class="card-img-top app" alt="BudgetTracker Image"></a>
             <div class="card-body">
@@ -122,8 +126,8 @@
                     <a id="openLoginBtn" class="button">API Call</a>
                     <div id="loginBox" class="box hidden">
                         <h3>Authenticate</h3>
-                        <input type="text" id="username" value="admin@budget.com" placeholder="Username"/>
-                        <input type="password" id="password" value="Budget123!" placeholder="Password"/>
+                        <input type="text" id="username" value="admin@budget.com" placeholder="Username" />
+                        <input type="password" id="password" value="Budget123!" placeholder="Password" />
                         <button id="loginBtn">Login & Call API (Report)</button>
                         <pre id="result"></pre>
                     </div>
