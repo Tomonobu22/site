@@ -94,24 +94,24 @@
         <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
             <a href="https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net" target="_blank"><img src="./images/budgetTracker.png" class="card-img-top app" alt="BudgetTracker Image"></a>
             <div class="card-body">
-                <h5 class="card-title">Budget Tracker <span class="badge bg-warning text-dark">In Progress</span></h5>
+                <h5 class="card-title">Budget Tracker <span class="badge bg-warning text-dark">Active Development</span></h5>
                 <p class="card-subtitle text-muted mb-2">
-                    ASP.NET Core MVC · EF Core · SQL Server · Azure · ASP.NET Identity
+                    ASP.NET Core MVC · EF Core · SQL Server · Azure App Service · Azure Functions · Azure Storage · ASP.NET Identity
                 </p>
                 <p class="card-text">
-                    A web app to track and visualize income, expenses, and investments with CRUD operations, authentication, and reporting features.
+                    A full-stack personal finance tracker to manage and visualize income, expenses, and investments.
+                    Includes authentication, reporting features, relational data modeling, and an asynchronous file import pipeline.
                 </p>
                 <ul class="mb-2">
-                    <li>Full-stack ASP.NET Core app with EF Core, Identity, and layered architecture</li>
-                    <li>REST API with JWT authentication</li>
-                    <li>Designed relational data models and Azure SQL integration</li>
-                    <li>CI/CD with GitHub Actions and automated Azure App Service deployments</li>
-                    <li>Multi-environment setup: staging (develop) and production (main)</li>
-                    <li>Ongoing UI and data visualization improvements</li>
+                    <li>Full-stack ASP.NET Core MVC application with EF Core, Identity, and layered architecture</li>
+                    <li>Relational database design with SQL Server and Azure SQL integration</li>
+                    <li>Asynchronous CSV import workflow using Azure Blob Storage, Azure Storage Queues, and Azure Functions</li>
+                    <li>Background processing service that validates, parses, and imports financial data into the database</li>
+                    <li>REST API endpoints with JWT authentication</li>
+                    <li>Cloud deployment with Azure App Service, Azure Functions, Azure Storage, and GitHub Actions CI/CD</li>
+                    <li>Multi-environment workflow with staging (develop) and production (main) branches</li>
+                    <li>Continuous improvements to UI, reporting, and data visualization features</li>
                 </ul>
-                <p class="text-muted small mb-0">
-                    Started: October 27, 2025
-                </p>
                 <div>
                     <a href="https://github.com/Tomonobu22/BudgetTracker.git" class="button" target="_blank">
                         <i class="bi bi-github"></i> GitHub <i class="fab fa-github" style="font-size: 18px;"></i>
