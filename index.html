@@ -131,49 +131,53 @@
                 </div>
             </div>
         </div>
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-            <a href="./pacman/index.html"><img src="./pacman/assets/pacman.png" class="card-img-top app" alt="PacMan Image"></a>
-            <div class="card-body">
-                <h5 class="card-title">🕹️ Pac-Man Game <span class="badge bg-info text-dark">Early learning project</span></h5>
-                <p class="card-subtitle text-muted mb-2">HTML · CSS · JavaScript</p>
-                <p class="card-text">
-                    Developed a browser-based Pac-Man game using vanilla JavaScript, featuring a custom game loop, grid-based movement, and real-time collision detection. Recently refactored the codebase into a modular architecture to improve maintainability and scalability.
-                </p>
-                <ul class="mb-2">
-                    <li>Designed player and ghost movement using grid-based logic</li>
-                    <li>Built maze layout and animations with CSS</li>
-                    <li>Implemented collision detection and game state management in JavaScript</li>
-                </ul>
-                <p class="text-muted small mb-0">
-                    Originally completed: 2022 · Refactored: 2026
-                </p>
-                <div>
-                    <a href="./pacman/index.html" class="button">Let's Play</a>
-                </div>
-
-            </div>
-        </div>
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
+        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2 d-flex flex-column" style="min-width: 12rem;">
             <a href="https://tomonobu22.github.io/WeatherReactApp/" target="_blank"><img src="./images/weather.png" class="card-img-top app" alt="Weather App"></a>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Weather App <span class="badge bg-info text-dark">Early learning project</span></h5>
-                <p class="card-subtitle text-muted mb-2">React · OpenWeather API</p>
+                <p class="card-subtitle text-muted mb-2">React · OpenWeather API · Custom Hooks · API Integration</p>
                 <p class="card-text">
-                    A simple weather dashboard built with React that fetches and displays live weather data from
-                    the OpenWeather API. Uses React hooks for state and effect management.
+                    A weather dashboard built with React that retrieves live weather data from
+                    the OpenWeather API. The application uses custom hooks, service separation,
+                    and data transformation to keep API logic separate from the user interface.
                 </p>
                 <ul class="mb-2">
-                    <li>Fetches live data from OpenWeather API</li>
-                    <li>Shows temperature, humidity, and weather conditions</li>
+                    <li>Fetches and displays live weather information</li>
+                    <li>Uses React hooks for state and asynchronous data handling</li>
+                    <li>Separates API communication and weather data mapping</li>
+                    <li>Displays location information with map integration</li>
                 </ul>
-                <p class="text-muted small mb-0">
-                    Completed: 2023
-                </p>
-                <div>
+                <div class="mt-auto">
+                    <p class="text-muted small mb-0">
+                        Originally created: 2023 · Refactored: 2026
+                    </p>
                     <a href="https://github.com/Tomonobu22/WeatherReactApp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 18px;"></i></a>
                     <a href="https://tomonobu22.github.io/WeatherReactApp/" class="button" target="_blank">
                         <i class="bi bi-box-arrow-up-right"></i> Live Demo
                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2 d-flex flex-column" style="min-width: 12rem;">
+            <a href="./pacman/index.html"><img src="./pacman/assets/pacman.png" class="card-img-top app" alt="PacMan Image"></a>
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Pac-Man <span class="badge bg-info text-dark">Early learning project</span></h5>
+                <p class="card-subtitle text-muted mb-2">HTML · CSS · JavaScript</p>
+                <p class="card-text">
+                    A browser-based Pac-Man clone built with vanilla JavaScript. The game features
+                    a custom game loop, grid-based movement, collision detection, and modular game
+                    logic following a recent refactor.
+                </p>
+                <ul class="mb-2">
+                    <li>Implemented grid-based player and ghost movement</li>
+                    <li>Built the maze layout and animations with CSS</li>
+                    <li>Managed collisions, scoring, and game state in JavaScript</li>
+                </ul>
+                <div class="mt-auto">
+                    <p class="text-muted small mb-0">
+                        Originally created: 2022 · Refactored: 2026
+                    </p>
+                    <a href="./pacman/index.html" class="button">Let's Play</a>
                 </div>
             </div>
         </div>
