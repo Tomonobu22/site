@@ -1,195 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap');
 
-
-
+/* Base page styles (use shared site look & feel) */
 body {
-	background: #0f172a;
-	color: #e2e8f0;
-	font-family: 'Inter', sans-serif;
+  max-width: 100%;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden; /* prevent horizontal scrolling when using arrow keys */
 }
 
-/* Navigation */
-
-.bckTop {
-	display: fixed;
-	background-color: #6885b1;
-}
-
-/* Buttons */
-
+/* Button defaults - keep game-specific options but allow bootstrap classes */
 button {
-    border: none;
-    padding: 0.6rem 1.2rem;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.2s;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.15s ease;
 }
 
-button:hover {
-	transform: scale(1.05);
+button:hover { transform: scale(1.03); }
+
+#start-btn { background-color: #7fa0d1; }
+#pause-btn { background-color: #b16b6b; }
+
+/* Page layout: reuse the site's centered card layout for the game */
+.content{
+  display: flex;
+  margin: 2% 0;
+  justify-content: center;
 }
 
-#start-btn {
-	background-color: #7fa0d1;
-}
-
-#pause-btn {
-	background-color: #b16b6b;
-}
-
-.gameButtonsContainer {
-	margin-bottom: 0.6rem;
-}
-
-
-/* Content */
-
-.content {
-    max-height: 70vh;
-    padding-top: 10px;
-    max-width: 500px;
-    margin: 25px auto 100px auto;
-}
+/* Game area sizing: responsive with a sensible max-width */
+#game { width: 100%; max-width: 500px; margin: 0 auto; }
 
 #power-container {
-	width: 420px;
-	height: 10px;
-	background: #2c3e50;
-	margin-top: 10px;
-	border-radius: 5px;
-	overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+  height: 10px;
+  background: #2c3e50;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: auto;
 }
 
-#power-bar {
-	height: 100%;
-	width: 0%;
-	background: #7fa0d1;
-	transition: width 0.1s linear;
-}
+#power-bar { height: 100%; width: 0%; background: #7fa0d1; transition: width 0.1s linear; }
 
-#overlay {
-	margin-bottom: 10px;
-}
+#overlay { margin-bottom: 10px; }
 
 #gameOver {
-    position: absolute;
-    top: 40%;
-    width: 420px;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 420px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  padding: 0.8rem;
+  border-radius: 6px;
 }
 
-#errorScreen {
-	display: none;
-}
+#errorScreen { display: none; }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(21, 20px);
-}
+.grid { display: grid; grid-template-columns: repeat(21, 20px); gap: 0; justify-content: center; }
+.grid div { width: 20px; height: 20px; }
 
-.grid div {
-	width: 20px;
-	height: 20px;
-}
+.pac-dot { background-color: #a8e6cf; border: 5px solid #FFF; box-sizing: border-box; border-radius: 50%; }
+.wall { background-color: #6885b1; }
+.ghost-lair { background-color: #8cf; }
+.power-pellet { background-color: #79b168; border-radius: 10px; }
 
-.pac-dot {
-	background-color: #a8e6cf;
-	border: 5px solid #FFF;
-	box-sizing: border-box;
-	border-radius: 50%;
-}
+.blinky { background: url(./assets/red.png); background-size: cover; background-position: center; border: 0; }
+.pinky { background: url(./assets/pink.png); background-size: cover; background-position: center; border: 0; }
+.inky { background: url(./assets/blue.png); background-size: cover; background-position: center; border: 0; }
+.clyde { background: url(./assets/orange.png); background-size: cover; background-position: center; border: 0; }
 
-.wall {
-	background-color: #6885b1;
-	/*#1e293b*/
-}
+.scared-ghost { background-color: aquamarine; border: 0; box-sizing: border-box; border-radius: 50%; }
 
-.ghost-lair {
-	background-color: #8cf;
-}
+.pac-man { background-color: #FFFF00; box-sizing: border-box; border-radius: 10px; box-shadow: 0 0 10px #0094ff; }
 
-.power-pellet {
-	background-color: #79b168;
-	border-radius: 10px;
-}
+.start { margin-bottom: 10px; }
+.backLair { background-color: #8cf; }
 
-.blinky {
-	background: url(./assets/red.png);
-	background-size: cover;
-	background-position: center center;
-	border: 0px;
-}
+.pac-man-right { box-shadow: yellowgreen 2px 0; }
+.pac-man-left { box-shadow: yellowgreen -2px 0; }
+.pac-man-up { box-shadow: yellowgreen 0 -2px; }
+.pac-man-down { box-shadow: yellowgreen 0 2px; }
 
-.pinky {
-	background: url(./assets/pink.png);
-	background-size: cover;
-	background-position: center center;
-	border: 0px;
-}
-
-.inky {
-	background: url(./assets/blue.png);
-	background-size: cover;
-	background-position: center center;
-	border: 0px;
-}
-
-.clyde {
-	background: url(./assets/orange.png);
-	background-size: cover;
-	background-position: center center;
-	border: 0px;
-}
-
-.scared-ghost {
-	background-color: aquamarine;
-	border: 0px;
-	box-sizing: border-box;
-	border-radius: 50%;
-}
-
-.pac-man {
-	background-color: #FFFF00;
-	box-sizing: border-box;
-	border-radius: 10px;
-	box-shadow: 0 0 10px #0094ff;
-}
-
-.start {
-	margin-bottom: 10px;
-}
-
-.backLair {
-	background-color: #8cf;
-}
-
-.pac-man-right {
-	box-shadow: yellowgreen 2px 0;
-}
-
-.pac-man-left {
-	box-shadow: yellowgreen -2px 0;
-}
-
-.pac-man-up {
-	box-shadow: yellowgreen 0 -2px;
-}
-
-.pac-man-down {
-	box-shadow: yellowgreen 0 2px;
-}
-
-@media only screen and (max-width: 580px) {
-	#game {
-		visibility: hidden;
-	}
-
-	#errorScreen {
-		width: 50vw;
-		display: inline-block;
-	}
+@media (max-width: 580px) {
+  #game { visibility: hidden; }
+  #errorScreen { width: 80vw; display: inline-block; }
 }

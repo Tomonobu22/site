@@ -36,6 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Pacman controls
     document.addEventListener('keydown', (e) => {
+        // Prevent the browser from scrolling when arrow keys are used for the game
+        if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', ' '].includes(e.key)) {
+            e.preventDefault();
+        }
+
         if (e.key === 'ArrowLeft') pacman.nextDirection = 'left';
         if (e.key === 'ArrowRight') pacman.nextDirection = 'right';
         if (e.key === 'ArrowUp') pacman.nextDirection = 'up';
