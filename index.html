@@ -1,27 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomonobu</title>
+    <meta name="theme-color" content="#1f2937">
+
+    <!-- Fonts (used by CSS) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="icon" href="./images/icon.png">
     <link rel="stylesheet" href="./css/style.css">
-	  <script src="https://kit.fontawesome.com/cdbba87284.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cdbba87284.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
 </head>
-<body>
+<body class="theme">
     <nav id="navigation" class="navbar navbar-expand-lg navbar-dark bckTop px-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
                 <img src="./images/icon.png" alt="logo" width="auto" height="30" style="filter:brightness(2.5)" class="d-inline-block align-text-top">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
+                <div class="navbar-nav ms-auto align-items-lg-center">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="#">About</a>
                     <a class="nav-link" href="#">Portfolio</a>
@@ -32,185 +42,191 @@
     </nav>
 
     <!-- ABOUT ME -->
-    <h2 id="aboutMe" class="band center headerText">About Me</h2>
-    <div class="aboutMeDiv row justify-content-center">
-        <div class="col-md-10 col-lg-7">
-            <div class="card shadow-sm border-0">
-                <div class="card-body p-4">
-                    <div>
-                        <img id="photo" src="./images/photo.png" alt="Photograph of Tomonobu">
-                    </div>
-                    <div id="text">
-                        <p>Hi, I'm Tomonobu. <br> Software Developer. <br></p>
+    <main class="container-lg py-5">
+        <h2 id="aboutMe" class="band center headerText shadow-sm">About Me</h2>
 
-                        <p>
-                            I began my journey in Mechatronics Engineering, where my curiosity for how things work
-                            naturally evolved into a passion for how software brings those things to life. During my
-                            studies, courses in Software for Engineering and Microcontrollers introduced me to
-                            programming in C and assembly—an experience that sparked a lasting interest in building
-                            and problem-solving through code.
-                        </p>
+        <div class="aboutMeDiv row justify-content-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <div class="card shadow-sm border-0 glass">
+                    <div class="card-body p-4">
+                        <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+                            <div class="text-center">
+                                <img id="photo" src="./images/photo.png" alt="Photograph of Tomonobu">
+                                <div class="mt-2 text-muted small">Software Developer</div>
+                            </div>
 
-                        <p>
-                            After graduating, I chose to dive deeper into software development, continuing to learn
-                            independently before moving to Canada to formalize my skills with a Diploma in Computer
-                            Programming in 2022.
-                        </p>
+                            <div id="text">
+                                <p class="lead">Hi, I'm Tomonobu.</p>
 
-                        <p>
-                            Today, I work as a Software Developer with over 3 years of experience specializing in .NET web development. I enjoy building reliable, scalable, and maintainable web applications using technologies such as <strong>ASP.NET Core MVC</strong>, <strong>Web APIs</strong>, <strong>Razor Pages</strong>, and <strong>SQL databases</strong>. I'm passionate about writing clean, efficient code and continuously improving my skills by exploring modern development practices and technologies.
-                        </p>
+                                <p>
+                                    I began my journey in Mechatronics Engineering, where my curiosity for how things work
+                                    naturally evolved into a passion for how software brings those things to life. During my
+                                    studies, courses in Software for Engineering and Microcontrollers introduced me to
+                                    programming in C and assembly—an experience that sparked a lasting interest in building
+                                    and problem-solving through code.
+                                </p>
 
-                        <p>
-                            I also have hands-on experience with automated testing for both web and mobile applications,
-                            ensuring the software I build is not only functional, but robust and maintainable.
-                        </p>
+                                <p>
+                                    After graduating, I chose to dive deeper into software development, continuing to learn
+                                    independently before moving to Canada to formalize my skills with a Diploma in Computer
+                                    Programming in 2022.
+                                </p>
+
+                                <p>
+                                    Today, I work as a Software Developer with over 3 years of experience specializing in .NET web development. I enjoy building reliable, scalable, and maintainable web applications using technologies such as <strong>ASP.NET Core MVC</strong>, <strong>Web APIs</strong>, <strong>Razor Pages</strong>, and <strong>SQL databases</strong>. I'm passionate about writing clean, efficient code and continuously improving my skills by exploring modern development practices and technologies.
+                                </p>
+
+                                <p>
+                                    I also have hands-on experience with automated testing for both web and mobile applications,
+                                    ensuring the software I build is not only functional, but robust and maintainable.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- PROJECTS -->
-    <h2 id="projects" class="band center headerText">Portfolio</h2>
 
-    <div class="row">
-        <div class="card col-12">
-            <div class="card-body center">
-                <i class="fab fa-database" style="font-size: 24px;"></i>
-                <i class="fab fa-html5" style="font-size: 24px;"></i>
-                <i class="fab fa-css3-alt" style="font-size: 24px;"></i>
-                <i class="fab fa-js-square" style="font-size: 24px;"></i>
-                <i class="fab fa-bootstrap" style="font-size: 24px;"></i>
-                <i class="fab fa-react" style="font-size: 24px;"></i>
-                <i class="fab fa-node-js" style="font-size: 24px;"></i>
-                <i class="fab fa-python" style="font-size: 24px;"></i>
-                <i class="fab fa-sass" style="font-size: 24px;"></i>
-                <i class="fab fa-github" style="font-size: 24px;"></i>
+        <!-- PROJECTS -->
+        <h2 id="projects" class="band center headerText mt-5">Portfolio</h2>
+
+        <div class="row mt-3">
+            <div class="card col-12">
+                <div class="card-body center py-3">
+                    <i class="fab fa-database me-3" style="font-size: 24px;"></i>
+                    <i class="fab fa-html5 me-3" style="font-size: 24px;"></i>
+                    <i class="fab fa-css3-alt me-3" style="font-size: 24px;"></i>
+                    <i class="fab fa-js-square me-3" style="font-size: 24px;"></i>
+                    <i class="fab fa-bootstrap me-3" style="font-size: 24px;"></i>
+                    <i class="fab fa-react me-3" style="font-size: 24px;"></i>
+                    <i class="fab fa-node-js me-3" style="font-size: 24px;"></i>
+                    <i class="fab fa-python me-3" style="font-size: 24px;"></i>
+                    <i class="fab fa-sass me-3" style="font-size: 24px;"></i>
+                    <i class="fab fa-github" style="font-size: 24px;"></i>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card-group centerProjects py-2">
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2" style="min-width: 12rem;">
-            <a href="https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net" target="_blank"><img src="./images/budgetTracker.png" class="card-img-top app" alt="BudgetTracker Image"></a>
-            <div class="card-body">
-                <h5 class="card-title">Budget Tracker <span class="badge bg-warning text-dark">Active Development</span></h5>
-                <p class="card-subtitle text-muted mb-2">
-                    ASP.NET Core MVC · EF Core · SQL Server · Azure App Service · Azure Functions · Azure Storage · ASP.NET Identity
-                </p>
-                <p class="card-text">
-                    A full-stack personal finance tracker to manage and visualize income, expenses, and investments.
-                    Includes authentication, reporting features, relational data modeling, and an asynchronous file import pipeline.
-                </p>
-                <ul class="mb-2">
-                    <li>Full-stack ASP.NET Core MVC application with EF Core, Identity, and layered architecture</li>
-                    <li>Relational database design with SQL Server and Azure SQL integration</li>
-                    <li>Asynchronous CSV import workflow using Azure Blob Storage, Azure Storage Queues, and Azure Functions</li>
-                    <li>Background processing service that validates, parses, and imports financial data into the database</li>
-                    <li>REST API endpoints with JWT authentication</li>
-                    <li>Cloud deployment with Azure App Service, Azure Functions, Azure Storage, and GitHub Actions CI/CD</li>
-                    <li>Multi-environment workflow with staging (develop) and production (main) branches</li>
-                    <li>Continuous improvements to UI, reporting, and data visualization features</li>
-                </ul>
-                <div>
-                    <a href="https://github.com/Tomonobu22/BudgetTracker.git" class="button" target="_blank">
-                        <i class="bi bi-github"></i> GitHub <i class="fab fa-github" style="font-size: 18px;"></i>
-                    </a>
-                    <a href="https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net" class="button" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> Live Demo
-                    </a>
+        <div class="card-group centerProjects py-4">
+            <!-- Budget Tracker -->
+            <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2 project-card" style="min-width: 12rem;">
+                <a href="https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net" target="_blank">
+                    <img src="./images/budgetTracker.png" class="card-img-top app" alt="BudgetTracker Image">
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Budget Tracker <span class="badge bg-warning text-dark">Active Development</span></h5>
+                    <p class="card-subtitle text-muted mb-2 small">
+                        ASP.NET Core MVC · EF Core · SQL Server · Azure App Service · Azure Functions · Azure Storage · ASP.NET Identity
+                    </p>
+                    <p class="card-text small">
+                        A full-stack personal finance tracker to manage and visualize income, expenses, and investments.
+                        Includes authentication, reporting features, relational data modeling, and an asynchronous file import pipeline.
+                    </p>
+                    <ul class="mb-2 small">
+                        <li>Full-stack ASP.NET Core MVC application with EF Core, Identity, and layered architecture</li>
+                        <li>Relational database design with SQL Server and Azure SQL integration</li>
+                        <li>Asynchronous CSV import workflow using Azure Blob Storage, Azure Storage Queues, and Azure Functions</li>
+                    </ul>
+                    <div class="mt-auto d-flex gap-2 flex-wrap">
+                        <a href="https://github.com/Tomonobu22/BudgetTracker.git" class="button" target="_blank">
+                            <i class="bi bi-github"></i> GitHub <i class="fab fa-github" style="font-size: 16px;"></i>
+                        </a>
+                        <a href="https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net" class="button" target="_blank">
+                            <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                        </a>
+                        <a id="openLoginBtn" class="button ms-auto">API Call</a>
+                    </div>
 
-                    <a id="openLoginBtn" class="button">API Call</a>
-                    <div id="loginBox" class="box hidden">
+                    <div id="loginBox" class="box hidden mt-3">
                         <h3>Authenticate</h3>
                         <input type="text" id="username" value="admin@budget.com" placeholder="Username" />
                         <input type="password" id="password" value="Budget123!" placeholder="Password" />
-                        <button id="loginBtn">Login & Call API (Report)</button>
+                        <button id="loginBtn" class="btn btn-primary">Login & Call API (Report)</button>
                         <pre id="result"></pre>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2 d-flex flex-column" style="min-width: 12rem;">
-            <a href="https://tomonobu22.github.io/WeatherReactApp/" target="_blank"><img src="./images/weather.png" class="card-img-top app" alt="Weather App"></a>
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Weather App <span class="badge bg-info text-dark">Early learning project</span></h5>
-                <p class="card-subtitle text-muted mb-2">React · OpenWeather API · Custom Hooks · API Integration</p>
-                <p class="card-text">
-                    A React weather dashboard that retrieves live weather data from the
-                    OpenWeather API and enriches the experience with dynamic backgrounds and
-                    location-based visualization. The application uses custom hooks, reusable
-                    components, and separated API logic to maintain a clean structure between
-                    data handling and presentation.
-                </p>
-                <ul class="mb-2">
-                    <li>Fetches and displays live weather information</li>
-                    <li>Uses custom React hooks for API calls, state management, and async flows</li>
-                    <li>Separates API communication and weather data mapping</li>
-                    <li>Integrates maps and dynamic imagery based on weather locations</li>
-                </ul>
-                <div class="mt-auto">
-                    <p class="text-muted small mb-0">
-                        Originally created: 2023 · Refactored: 2026
-                    </p>
-                    <a href="https://github.com/Tomonobu22/WeatherReactApp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 18px;"></i></a>
-                    <a href="https://tomonobu22.github.io/WeatherReactApp/" class="button" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> Live Demo
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2 d-flex flex-column" style="min-width: 12rem;">
-            <a href="./pacman/index.html"><img src="./pacman/assets/pacman.png" class="card-img-top app" alt="PacMan Image"></a>
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Pac-Man <span class="badge bg-info text-dark">Early learning project</span></h5>
-                <p class="card-subtitle text-muted mb-2">HTML · CSS · JavaScript</p>
-                <p class="card-text">
-                    A browser-based Pac-Man clone built with vanilla JavaScript. The game features
-                    a custom game loop, grid-based movement, collision detection, and modular game
-                    logic following a recent refactor.
-                </p>
-                <ul class="mb-2">
-                    <li>Implemented grid-based player and ghost movement</li>
-                    <li>Built the maze layout and animations with CSS</li>
-                    <li>Managed collisions, scoring, and game state in JavaScript</li>
-                </ul>
-                <div class="mt-auto">
-                    <p class="text-muted small mb-0">
-                        Originally created: 2022 · Refactored: 2026
-                    </p>
-                    <a href="./pacman/index.html" class="button">Let's Play</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- CONTACT ME -->
-    <div id="contactMe">
-        <h2 class="headerText">Contact Me</h2>
-        <form id="messageForm" action="https://formspree.io/f/mrboyyqy" method="POST" onsubmit="return validateForm()">
-            <h4 class="center">GET IN TOUCH</h4>
-            <p class="center"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;tomonobu.ft@gmail.com</p><br>
-            <div class="mb-3 formText">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required="required" placeholder="Insert your name" onchange="validateName()">
-                <small class="error"></small>
+            <!-- Weather App -->
+            <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2 d-flex flex-column project-card" style="min-width: 12rem;">
+                <a href="https://tomonobu22.github.io/WeatherReactApp/" target="_blank">
+                    <img src="./images/weather.png" class="card-img-top app" alt="Weather App">
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Weather App <span class="badge bg-info text-dark">Early learning project</span></h5>
+                    <p class="card-subtitle text-muted mb-2 small">React · OpenWeather API · Custom Hooks · API Integration</p>
+                    <p class="card-text small">
+                        A React weather dashboard that retrieves live weather data from the
+                        OpenWeather API and enriches the experience with dynamic backgrounds and
+                        location-based visualization. The application uses custom hooks, reusable
+                        components, and separated API logic to maintain a clean structure between
+                        data handling and presentation.
+                    </p>
+                    <ul class="mb-2 small">
+                        <li>Fetches and displays live weather information</li>
+                        <li>Uses custom React hooks for API calls, state management, and async flows</li>
+                        <li>Separates API communication and weather data mapping</li>
+                    </ul>
+                    <div class="mt-auto d-flex gap-2">
+                        <a href="https://github.com/Tomonobu22/WeatherReactApp.git" target="_blank" class="button">GitHub <i class="fab fa-github" style="font-size: 16px;"></i></a>
+                        <a href="https://tomonobu22.github.io/WeatherReactApp/" class="button" target="_blank">
+                            <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3 formText">
-                <label for="email" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" name="email" required="required" placeholder="Insert you email" onchange="emailIsValid()">
-                <small class="error"></small>
+
+            <!-- Pac-Man -->
+            <div class="card col-sm-12 col-md-4 col-lg-3 col-xl-2 mx-2 my-2 d-flex flex-column project-card" style="min-width: 12rem;">
+                <a href="./pacman/index.html"><img src="./pacman/assets/pacman.png" class="card-img-top app" alt="PacMan Image"></a>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Pac-Man <span class="badge bg-info text-dark">Early learning project</span></h5>
+                    <p class="card-subtitle text-muted mb-2 small">HTML · CSS · JavaScript</p>
+                    <p class="card-text small">
+                        A browser-based Pac-Man clone built with vanilla JavaScript. The game features
+                        a custom game loop, grid-based movement, collision detection, and modular game
+                        logic following a recent refactor.
+                    </p>
+                    <ul class="mb-2 small">
+                        <li>Implemented grid-based player and ghost movement</li>
+                        <li>Built the maze layout and animations with CSS</li>
+                        <li>Managed collisions, scoring, and game state in JavaScript</li>
+                    </ul>
+                    <div class="mt-auto d-flex gap-2">
+                        <a href="./pacman/index.html" class="button">Let's Play</a>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3 formText">
-                <label for="message" class="form-label">Message</label>
-                <textarea required="required" id="message" name="message" class="form-control" style="resize: none;"></textarea>
-            </div>
-            <button type="submit" class="button">Submit</button>
-        </form>
-    </div>
+        </div>
+
+        <!-- CONTACT ME -->
+        <div id="contactMe" class="mt-5">
+            <h2 class="headerText mt-5">Contact Me</h2>
+            <form id="messageForm" action="https://formspree.io/f/mrboyyqy" method="POST" onsubmit="return validateForm()">
+                <p class="center"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;tomonobu.ft@gmail.com</p><br>
+                <div class="mb-3 formText">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required="required" placeholder="Insert your name" onchange="validateName()">
+                    <small class="error"></small>
+                </div>
+                <div class="mb-3 formText">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" required="required" placeholder="Insert you email" onchange="emailIsValid()">
+                    <small class="error"></small>
+                </div>
+                <div class="mb-3 formText">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea required="required" id="message" name="message" class="form-control" style="resize: none;"></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </main>
 
     <script src="./js/app.js"></script>
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 </body>
 </html>
