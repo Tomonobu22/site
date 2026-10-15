@@ -1,2 +1,2 @@
-# site
-This is my first web page where I share my personal projects and a little about myself.
+# My Portfolio
+This site is a collection of my work, projects, experience, and the things I’ve been building and learning along the wa
