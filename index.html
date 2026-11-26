@@ -116,34 +116,43 @@
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Budget Tracker <span class="badge bg-warning text-dark">Active Development</span></h5>
                     <p class="card-subtitle text-muted mb-2 small">
-                        ASP.NET Core MVC · EF Core · SQL Server · Azure App Service · Azure Functions · Azure Storage · ASP.NET Identity
+                        ASP.NET Core MVC · .NET 10 · EF Core · SQL Server · ASP.NET Identity · MonsterASP.NET
                     </p>
                     <p class="card-text small">
-                        A full-stack personal finance tracker to manage and visualize income, expenses, and investments.
-                        Includes authentication, reporting features, relational data modeling, and an asynchronous file import pipeline.
+                        A full-stack personal finance application for managing and visualizing income,
+                        expenses, and investments. Features secure authentication, financial reporting,
+                        and a structured, maintainable architecture.
                     </p>
                     <ul class="mb-2 small">
-                        <li>Full-stack ASP.NET Core MVC application with EF Core, Identity, and layered architecture</li>
-                        <li>Relational database design with SQL Server and Azure SQL integration</li>
-                        <li>Asynchronous CSV import workflow using Azure Blob Storage, Azure Storage Queues, and Azure Functions</li>
+                        <li>Layered architecture with separation of concerns between presentation, business logic, and data access</li>
+                        <li>Relational database modeling and code-first database migrations using EF Core</li>
+                        <li>Authentication and authorization using ASP.NET Core Identity</li>
+                        <li>Automated testing with dedicated Core and Web test projects</li>
+                        <li>Production deployment with environment-specific configuration and secure secrets management</li>
                     </ul>
+                    <div class="border-start border-primary border-3 ps-2 py-1 mt-3">
+                        <small class="text-muted">
+                            <i class="bi bi-info-circle me-1"></i>
+                            Hosting migration from Microsoft Azure to MonsterASP.NET in progress.
+                        </small>
+                    </div>
                     <div class="mt-auto d-flex gap-2 flex-wrap">
                         <a href="https://github.com/Tomonobu22/BudgetTracker.git" class="button" target="_blank">
                             <i class="bi bi-github"></i> GitHub <i class="fab fa-github" style="font-size: 16px;"></i>
                         </a>
-                        <a href="https://budgettracker-prod-cmgbfwf6czgkb4a2.canadacentral-01.azurewebsites.net" class="button" target="_blank">
+                        <a href="https://mybudgettracker.runasp.net/" class="button" target="_blank">
                             <i class="bi bi-box-arrow-up-right"></i> Live Demo
                         </a>
-                        <a id="openLoginBtn" class="button ms-auto">API Call</a>
+                        <!--<a id="openLoginBtn" class="button ms-auto">API Call</a>-->
                     </div>
 
-                    <div id="loginBox" class="box hidden mt-3">
-                        <h3>Authenticate</h3>
-                        <input type="text" id="username" value="admin@budget.com" placeholder="Username" />
-                        <input type="password" id="password" value="Budget123!" placeholder="Password" />
-                        <button id="loginBtn" class="btn btn-primary">Login & Call API (Report)</button>
-                        <pre id="result"></pre>
-                    </div>
+                    <!--<div id="loginBox" class="box hidden mt-3">
+        <h3>Authenticate</h3>
+        <input type="text" id="username" value="admin@budget.com" placeholder="Username" />
+        <input type="password" id="password" value="Budget123!" placeholder="Password" />
+        <button id="loginBtn" class="btn btn-primary">Login & Call API (Report)</button>
+        <pre id="result"></pre>
+    </div>-->
                 </div>
             </div>
 
